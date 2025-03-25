@@ -12,6 +12,5 @@ module lk.ijse.gdse.ormcaursework.ormcaursework {
     opens lk.ijse.gdse.ormcaursework.controller to javafx.fxml;
     opens lk.ijse.gdse.ormcaursework.config to jakarta.persistence;
     opens lk.ijse.gdse.ormcaursework.entity to org.hibernate.orm.core;
-//    opens lk.ijse.gdse.ormcaursework.dto to org.hibernate.orm.core;
 
 }
