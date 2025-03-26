@@ -22,7 +22,7 @@ public class LoginPageController {
         Session session = FactoryConfiguration.getFactoryConfiguration().getSession();
         Transaction tx = session.beginTransaction();
         User user = new User();
-        user.setUserName("prasad");
+        user.setUserName("jason");
         user.setPassword("1234");
         tx.commit();
         session.close();
