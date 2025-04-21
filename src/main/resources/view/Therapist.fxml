@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapistController">
+   <children>
+      <Label layoutX="44.0" layoutY="31.0" text="Therapist Management" textFill="#1c3334">
+         <font>
+            <Font name="Segoe UI Bold" size="45.0" />
+         </font>
+      </Label>
+
+      <!-- Table Container -->
+      <AnchorPane layoutX="25.0" layoutY="116.0" prefHeight="295.0" prefWidth="1191.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <effect>
+            <DropShadow height="8.0" radius="3.5" width="8.0">
+               <color>
+                  <Color opacity="0.1" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TableView fx:id="table" layoutX="15.0" layoutY="15.0" onMouseClicked="#TableAction" prefHeight="265.0" prefWidth="1161.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <columns>
+                  <TableColumn fx:id="tableId" prefWidth="95.0" text="ID" />
+                  <TableColumn fx:id="tableName" prefWidth="195.0" text="Name" />
+                  <TableColumn fx:id="tableQualifications" prefWidth="210.0" text="Qualifications" />
+                  <TableColumn fx:id="tableAvailable" prefWidth="190.0" text="Availability" />
+                  <TableColumn fx:id="tableContact" prefWidth="175.0" text="Contact" />
+                  <TableColumn fx:id="tableMail" prefWidth="255.0" text="Email" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+
+      <!-- Details Section Label -->
+      <Label layoutX="25.0" layoutY="419.0" text="Therapist Details" textFill="#2c3e50">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+
+      <!-- Form Container -->
+      <AnchorPane layoutX="25.0" layoutY="454.0" prefHeight="200.0" prefWidth="1191.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <effect>
+            <DropShadow height="8.0" radius="3.5" width="8.0">
+               <color>
+                  <Color opacity="0.1" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <!-- First Row -->
+            <Label layoutX="20.0" layoutY="20.0" text="Therapist ID" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="docIDlabel" layoutX="20.0" layoutY="45.0" prefHeight="24.0" prefWidth="154.0" text="Doctor Id" textFill="#2c3e50">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+            </Label>
+
+            <Label layoutX="220.0" layoutY="20.0" text="Contact Number" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="docContact" layoutX="220.0" layoutY="40.0" prefHeight="32.0" prefWidth="290.0" promptText="077-xxxxxxx" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+
+            <Label layoutX="550.0" layoutY="20.0" text="Qualifications" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="docQualificationsCombo" layoutX="550.0" layoutY="40.0" prefHeight="32.0" prefWidth="290.0" promptText="Select qualification" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;" />
+
+            <!-- Second Row -->
+            <Label layoutX="20.0" layoutY="85.0" text="Full Name" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="docName" layoutX="20.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="full name" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+
+            <Label layoutX="345.0" layoutY="85.0" text="Email Address" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="docMail" layoutX="345.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="example@gmail.com" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;">
+               <font>
+                  <Font name="Segoe UI" size="13.0" />
+               </font>
+            </TextField>
+
+            <Label layoutX="670.0" layoutY="85.0" text="Availability" textFill="#5d6d7e">
+               <font>
+                  <Font name="Segoe UI SemiBold" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="docAvailableCombo" layoutX="670.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="Select availability" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;" />
+
+            <!-- Buttons -->
+            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #3498db; -fx-background-radius: 4;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+
+            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 4;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+
+            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 4;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+
+            <Button fx:id="reset" layoutX="650.0" layoutY="150.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 4;" text="Reset" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+
+            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #9b59b6; -fx-background-radius: 4;" text="View Activities" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0">
+                     <color>
+                        <Color opacity="0.25" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+
+      <!-- Footer -->
+      <Line endX="1116.0" layoutX="108.0" layoutY="666.0" startX="-83.0" stroke="#3498db" strokeWidth="0.5" />
+   </children>
+</AnchorPane>

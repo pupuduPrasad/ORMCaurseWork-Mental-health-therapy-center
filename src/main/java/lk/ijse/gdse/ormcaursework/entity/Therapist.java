@@ -1,34 +1,27 @@
 package lk.ijse.gdse.ormcaursework.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
-@Setter
-@Getter
-
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "Therapists")
-public class Therapist {
-    @Id
-    private String therapistID;
-    private String therapistName;
+@Table(name = "therapist")
+public class Therapist implements SuperEntity {
 
-    @ManyToOne
-    @JoinColumn(name = "programID")
-    private TherapyProgram therapyProgram;
+        @Id
+        private String doctorID;
+        private String doctorName;
+        private String doctorQualifications;
+        private String doctorAvailability;
+        private String doctorPhone;
+        private String doctorEmail;
 
-    @OneToMany (mappedBy = "therapist" , cascade = CascadeType.ALL)
-    private List<TherapySession> therapySessions = new ArrayList<>();
-
-    public Therapist(String id, String name, TherapyProgram program) {
-        therapistID = id;
-        therapistName = name;
-        therapyProgram = program;
-    }
+        @OneToMany(mappedBy = "therapist",cascade = CascadeType.ALL)
+        private List<Appointments> appointments;
 }

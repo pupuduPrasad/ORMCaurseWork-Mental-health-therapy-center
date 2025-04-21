@@ -3,19 +3,21 @@ package lk.ijse.gdse.ormcaursework.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.*;
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "users")
-public class User {
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Table(name = "user_details")
+public class User implements SuperEntity {
     @Id
-    private String userName;
-    private String password;
+    private String userID;
+    private String userFullName;
+    private String userEmail;
     private String userRole;
+    private String userName;
+    private String userPassword;
 }

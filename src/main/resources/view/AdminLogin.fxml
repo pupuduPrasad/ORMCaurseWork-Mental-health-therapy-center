@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.project.mentalHealthTherapyCenter.controller.Login.UserLogin">
+<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.Login.AdminLogin">
 
     <!-- Title -->
     <Label layoutX="256.0" layoutY="83.0" prefHeight="32.0" prefWidth="201.0" text="ADMIN LOGIN" textFill="#1c3334">
@@ -49,7 +49,7 @@
     </Label>
     <ImageView fitHeight="84.0" fitWidth="80.0" layoutX="150.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
         <image>
-            <Image url="@../img/users.png" />
+            <Image url="@../img/admin.jpeg" />
         </image>
     </ImageView>
 

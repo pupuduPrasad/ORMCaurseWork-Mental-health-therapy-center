@@ -1,43 +1,34 @@
 package lk.ijse.gdse.ormcaursework.entity;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
 @Data
-
-@Entity
-@Table (name = "patient")
-public class Patient {
+@Table(name = "patient")
+public class Patient implements SuperEntity {
     @Id
     private String patientID;
     private String patientName;
-    private String patientAge;
+    private String patientBirthDate;
+    private String patientNIC;
     private String patientGender;
-    private String mobileNumber;
-    private String address;
-    private String medicalHistory;
+    @Column(length = 100)
+    private String patientAddress;
+    private String patientPhone;
+    private String patientEmail;
 
-//    @OneToMany (mappedBy = "patient" , cascade = CascadeType.ALL)
-//    private List<ProgramDetails> programDetails = new ArrayList<>();
+    @OneToMany(mappedBy = "patient" ,cascade = CascadeType.ALL)
+    private List<Appointments> appointments;
 
-    @OneToMany (mappedBy = "patient" , cascade = CascadeType.ALL)
-    private List<TherapySession> therapySessions = new ArrayList<>();
 
-    @OneToMany (mappedBy = "patient" , cascade = CascadeType.ALL)
-    private List<Payment> payments = new ArrayList<>();
+    @OneToMany(mappedBy = "patient",cascade = CascadeType.ALL)
+    private List<ProgramDetails> programDetails;
 
-    public Patient(String id, String name, String age, String number, String note) {
-        this.patientID = id;
-        this.patientName = name;
-        this.patientAge = String.valueOf(Integer.parseInt(age));
-        this.mobileNumber = number;
-        this.medicalHistory = note;
-    }
 }

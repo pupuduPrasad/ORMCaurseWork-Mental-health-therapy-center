@@ -1,24 +1,25 @@
 package lk.ijse.gdse.ormcaursework.entity;
 
-
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Getter
-@Setter
-
-@Entity
-public class Payment {
+@Table(name = "payment")
+public class Payment implements SuperEntity {
     @Id
-    private String paymentID;
-    private String paymentDate;
-    private int PaymentAmount;
+    private  String paymentID;
+    private  String patientName;
+    private  Double paymentAmount;
+    private  String paymentMethod;
+    private  String paymentDate;
+    private  String paymentTime;
 
-    @ManyToOne
-    @JoinColumn (name = "patientID")
-    private Patient patient;
+    @OneToOne(mappedBy = "payment",cascade = CascadeType.ALL)
+    private Appointments appointments;
 
 }

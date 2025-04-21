@@ -5,6 +5,8 @@ module lk.ijse.gdse.ormcaursework.ormcaursework {
     requires static lombok;
     requires jakarta.persistence;
     requires java.naming;
+    requires spring.security.crypto;
+    requires net.sf.jasperreports.core;
 
     opens lk.ijse.gdse.ormcaursework to javafx.fxml;
     exports lk.ijse.gdse.ormcaursework;

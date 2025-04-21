@@ -18,7 +18,7 @@ public class FactoryConfiguration {
         sessionFactory = config.buildSessionFactory();
     }
 
-    public static FactoryConfiguration getFactoryConfiguration() {
+    public static FactoryConfiguration getInstance() {
         return (factoryConfiguration == null) ? factoryConfiguration = new FactoryConfiguration() : factoryConfiguration;
     }
 

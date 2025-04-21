@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="703.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #e6e9f0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.ViewAppointments">
+   <children>
+      <Pane layoutX="-14.0" layoutY="-3.0" prefHeight="67.0" prefWidth="1215.0" style="-fx-background-color: #376E6F;">
+         <children>
+            <!-- Header Section -->
+            <Label layoutX="284.0" layoutY="22.0" text="Appointments of Serenity Mental Health Therapy Center" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold" size="22.0" />
+               </font>
+               <effect>
+                  <Glow level="0.17" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+
+      <Line endX="1150.0" layoutX="25.0" layoutY="70.0" stroke="#4c8c8c66" strokeWidth="1.5" />
+
+      <!-- Table Section -->
+      <TableView fx:id="Table" layoutX="18.0" layoutY="80.0" onMouseClicked="#tableAction" prefHeight="311.0" prefWidth="1164.0">
+         <columns>
+            <TableColumn fx:id="tableSessionID" prefWidth="92.80000305175781" text="SessionID" />
+            <TableColumn fx:id="tableSessionDate" prefWidth="110.39999389648438" text="Date" />
+            <TableColumn fx:id="tableSessionTime" prefWidth="107.20001220703125" text="Time" />
+            <TableColumn fx:id="tableSessionNotes" prefWidth="103.20001220703125" text="Notes" />
+            <TableColumn fx:id="tableDocID" prefWidth="116.0" text="Doctor ID" />
+            <TableColumn fx:id="tableProgramID" prefWidth="112.800048828125" text="Program ID" />
+            <TableColumn fx:id="tablePatientName" prefWidth="104.7999267578125" text="Patient Name" />
+            <TableColumn fx:id="tablePaymentID" prefWidth="84.7999267578125" text="Payment ID" />
+            <TableColumn fx:id="tablePaymentAmount" prefWidth="96.800048828125" text="Amount" />
+            <TableColumn fx:id="tablePaymentMethod" prefWidth="104.800048828125" text="Method" />
+            <TableColumn fx:id="tableSessionStatus" prefWidth="126.4000244140625" text="isCancel" />
+         </columns>
+      </TableView>
+
+      <Line endX="1150.0" layoutX="25.0" layoutY="442.0" stroke="#4c8c8c66" strokeWidth="1.5" />
+
+      <!-- Form Section - Left Side -->
+      <Label layoutX="52.0" layoutY="447.0" text="Update Appointment Details" textFill="#408181">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="labelSessionID" layoutX="102.0" layoutY="493.0" prefHeight="27.0" prefWidth="79.0" text="Session ID" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="labelPaymentID" layoutX="236.0" layoutY="492.0" prefHeight="27.0" prefWidth="89.0" text="Payment ID" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+
+      <!-- First Column of Fields -->
+      <Label layoutX="102.0" layoutY="553.0" text="Session Notes:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSessionNotes" layoutX="205.0" layoutY="551.0" prefHeight="28.0" prefWidth="162.0" promptText="Update session notes" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+
+      <Label layoutX="102.0" layoutY="597.0" text="Session Date:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSessionDate" layoutX="204.0" layoutY="593.0" prefHeight="28.0" prefWidth="162.0" promptText="Update session date" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+
+      <Label layoutX="102.0" layoutY="645.0" text="Session Time:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textSessionTime" layoutX="204.0" layoutY="643.0" prefHeight="28.0" prefWidth="162.0" promptText="Update session time" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+
+      <!-- Second Column of Fields -->
+      <Label layoutX="392.0" layoutY="548.0" text="Payment Amount:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPaymentAmount" layoutX="518.0" layoutY="543.0" prefHeight="30.0" prefWidth="176.0" promptText="Update payment amount" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+
+      <Label layoutX="392.0" layoutY="595.0" text="Payment Method:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPaymentMethod" layoutX="517.0" layoutY="593.0" prefHeight="38.0" prefWidth="173.0" promptText="Update payment method" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
+
+      <Label layoutX="395.0" layoutY="651.0" text="Doctor ID:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboDocId" layoutX="517.0" layoutY="642.0" prefHeight="38.0" prefWidth="173.0" promptText="Update doctor ID" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
+
+      <!-- Third Column of Fields -->
+      <Label layoutX="392.0" layoutY="492.0" prefHeight="27.0" prefWidth="104.0" text="Patient Name:" textFill="#333333">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPatientName" layoutX="516.0" layoutY="486.0" prefHeight="38.0" prefWidth="173.0" promptText="Update patient name" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
+
+      <Button fx:id="rescheduleBTN" layoutX="839.0" layoutY="490.0" mnemonicParsing="false" onAction="#rescheduleBTNAction" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #4C8C8C;" text="RESCHEDULE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+
+      <Button fx:id="cancelBTN" layoutX="840.0" layoutY="558.0" mnemonicParsing="false" onAction="#cancelBTNAction" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #4C8C8C;" text="CANCEL APPOINTMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+
+      <Button fx:id="resetBTN" layoutX="841.0" layoutY="625.0" mnemonicParsing="false" onAction="#resetBTNAction" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #4C8C8C;" text="RESET" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

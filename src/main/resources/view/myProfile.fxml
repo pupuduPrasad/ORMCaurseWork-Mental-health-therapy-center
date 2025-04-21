@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.project.mentalHealthTherapyCenter.controller.MyProfile">
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.MyProfile">
    <children>
       <!-- Header Section -->
       <ImageView fx:id="image" fitHeight="69.0" fitWidth="71.0" layoutX="250.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
