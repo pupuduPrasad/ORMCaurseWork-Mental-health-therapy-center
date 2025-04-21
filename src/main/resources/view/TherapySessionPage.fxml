@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapySessionPageController">
+
+    <!-- Title Label -->
+    <Label text="Therapy Session Management" style="-fx-font-size: 20px; -fx-font-weight: bold;"
+           layoutX="20" layoutY="20"/>
+
+    <!-- Therapy Program ComboBox -->
+    <Label text="Select Therapy Program:" layoutX="20" layoutY="60"/>
+    <ComboBox fx:id="programComboBox" layoutX="150" layoutY="60" prefWidth="200"/>
+
+    <!-- Therapist ComboBox -->
+    <Label text="Assign Therapist:" layoutX="20" layoutY="100"/>
+    <ComboBox fx:id="therapistComboBox" layoutX="150" layoutY="100" prefWidth="200"/>
+
+    <!-- Patient ComboBox -->
+    <Label text="Select Patient:" layoutX="20" layoutY="140"/>
+    <ComboBox fx:id="patientComboBox" layoutX="150" layoutY="140" prefWidth="200"/>
+
+    <!-- Session Date -->
+    <Label text="Select Session Date:" layoutX="20" layoutY="180"/>
+    <DatePicker fx:id="sessionDatePicker" layoutX="150" layoutY="180" prefWidth="200"/>
+
+    <!-- Session Time -->
+    <Label text="Select Session Time:" layoutX="20" layoutY="220"/>
+    <TextField fx:id="sessionTimeTextField" layoutX="150" layoutY="220" prefWidth="200"/>
+
+    <!-- Buttons -->
+    <HBox spacing="20" alignment="CENTER" layoutX="20" layoutY="270">
+        <Button text="Book Appointment" fx:id="bookButton" prefWidth="120"/>
+        <Button text="Reschedule" fx:id="rescheduleButton" prefWidth="120"/>
+        <Button text="Cancel Appointment" fx:id="cancelButton" prefWidth="120"/>
+    </HBox>
+
+    <!-- Status Message -->
+    <Text fx:id="statusText" layoutX="20" layoutY="320" fill="red" />
+
+</AnchorPane>

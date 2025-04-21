@@ -1,0 +1,99 @@
+/* Patient Registration Form Stylesheet */
+
+/* Root styling for consistent colors and themes */
+.root {
+    -fx-background-color: #f4f4f7;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Header Label Styling */
+.label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.title-label {
+    -fx-font-size: 28px;
+    -fx-text-fill: #142171;
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #142171;
+    -fx-border-width: 2px;
+}
+
+/* TextArea Styling */
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-font-size: 14px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}
+
+.text-area:focused {
+    -fx-border-color: #142171;
+    -fx-border-width: 2px;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-radius: 4px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+/* Register Button */
+.register-button {
+    -fx-background-color: #142171;
+}
+
+/* Update Button */
+.update-button {
+    -fx-background-color: #0066cc;
+}
+
+/* Delete Button */
+.delete-button {
+    -fx-background-color: #dc3545;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f0f0f0;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e6f2ff;
+}
