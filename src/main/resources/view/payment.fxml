@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.project.mentalHealthTherapyCenter.controller.PayementController">
+   <children>
+      <TableView fx:id="table" layoutX="25.0" layoutY="140.0" onMouseClicked="#tableAction" prefHeight="518.0" prefWidth="1193.0">
+        <columns>
+          <TableColumn fx:id="tablePayID" prefWidth="135.20000457763672" text="ID" />
+          <TableColumn fx:id="tablePayerName" prefWidth="204.8000030517578" text="Payer" />
+            <TableColumn fx:id="tablePayAmount" prefWidth="254.13327026367188" text="Amount" />
+            <TableColumn fx:id="tablePayMethod" prefWidth="187.46673583984375" text="Method" />
+            <TableColumn fx:id="tablePayDate" prefWidth="224.800048828125" text="Date" />
+            <TableColumn fx:id="tablePayTime" prefWidth="222.40008544921875" text="Time" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-5.0" layoutY="-1.0" prefHeight="104.0" prefWidth="1246.0" style="-fx-background-color: #1C3334;">
+         <children>
+            <Label layoutX="425.0" layoutY="11.0" prefHeight="67.0" prefWidth="508.0" text="Payments Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="53.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="112.0" layoutX="315.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/pay.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

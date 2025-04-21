@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #f5f5f7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.project.mentalHealthTherapyCenter.controller.popups.PatientsEnrolledInEveryPrograms">
+    <children>
+
+        <TableView fx:id="Table" layoutX="20.0" layoutY="120.0" prefHeight="365.0" prefWidth="710.0" stylesheets="@../styles/table-style.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+            <columns>
+                <TableColumn fx:id="tableID" prefWidth="118.40004920959473" text="Patient ID" />
+                <TableColumn fx:id="tableName" prefWidth="181.5999755859375" text="Full Name" />
+                <TableColumn fx:id="tableAddress" prefWidth="220.0" text="Address" />
+                <TableColumn fx:id="tableContact" prefWidth="189.199951171875" text="Contact Number" />
+            </columns>
+        </TableView>
+      <Pane prefHeight="71.0" prefWidth="750.0" style="-fx-background-color: #376E6F;">
+         <children>
+                <Label layoutX="33.0" layoutY="20.0" text="Patients Enrolled In All Programs" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="22.0" />
+                    </font>
+                </Label>
+         </children>
+      </Pane>
+    </children>
+    <effect>
+        <DropShadow />
+    </effect>
+</AnchorPane>

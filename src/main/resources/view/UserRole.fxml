@@ -8,36 +8,36 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="459.0" prefWidth="691.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.UserRoleController">
+<AnchorPane prefHeight="500.0" prefWidth="646.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.UserRoleController">
     <children>
         <Pane layoutX="26.0" layoutY="-1.0" prefHeight="26.0" prefWidth="200.0" />
-        <Label fx:id="text" layoutX="47.0" layoutY="25.0" prefHeight="66.0" prefWidth="612.0" text=" Mental Health Therapy Center" textFill="#184646" wrapText="true">
+        <Label fx:id="text" layoutX="20.0" layoutY="25.0" prefHeight="66.0" prefWidth="612.0" text=" Mental Health Therapy Center" textFill="#184646" wrapText="true">
             <font>
                 <Font name="Arial Black" size="35.0" />
             </font>
         </Label>
-        <Line endX="432.5999755859375" endY="-1.52587890625E-5" layoutX="221.0" layoutY="91.0" startX="-169.0" startY="-1.52587890625E-5" />
-        <Label layoutX="420.0" layoutY="326.0" prefHeight="40.0" prefWidth="77.0" text="ADMIN" wrapText="true">
+        <Line endX="432.5999755859375" endY="-1.52587890625E-5" layoutX="189.0" layoutY="91.0" startX="-169.0" startY="-1.52587890625E-5" />
+        <Label layoutX="400.0" layoutY="326.0" prefHeight="40.0" prefWidth="77.0" text="ADMIN" wrapText="true">
             <font>
                 <Font name="Arial Black" size="18.0" />
             </font>
         </Label>
-        <Label layoutX="186.0" layoutY="326.0" prefHeight="40.0" prefWidth="64.0" text="USER" wrapText="true">
+        <Label layoutX="166.0" layoutY="326.0" prefHeight="40.0" prefWidth="64.0" text="USER" wrapText="true">
             <font>
                 <Font name="Arial Black" size="18.0" />
             </font>
         </Label>
-      <ImageView fx:id="user" fitHeight="161.0" fitWidth="150.0" layoutX="137.0" layoutY="167.0" onMouseClicked="#userAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="user" fitHeight="161.0" fitWidth="150.0" layoutX="120.0" layoutY="167.0" onMouseClicked="#userAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/users.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="admin" fitHeight="150.0" fitWidth="169.0" layoutX="379.0" layoutY="167.0" onMouseClicked="#adminAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="admin" fitHeight="150.0" fitWidth="169.0" layoutX="362.0" layoutY="167.0" onMouseClicked="#adminAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/admin.jpeg" />
          </image>
       </ImageView>
-      <Pane prefHeight="26.0" prefWidth="702.0" style="-fx-background-color: #376E6F;" />
-      <Pane layoutX="676.0" layoutY="26.0" prefHeight="434.0" prefWidth="26.0" style="-fx-background-color: #1C3334;" />
+      <Pane prefHeight="26.0" prefWidth="659.0" style="-fx-background-color: #376E6F;" />
+      <Pane layoutX="633.0" layoutY="26.0" prefHeight="476.0" prefWidth="26.0" style="-fx-background-color: #1C3334;" />
     </children>
 </AnchorPane>

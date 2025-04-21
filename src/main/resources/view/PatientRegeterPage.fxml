@@ -1,58 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="654.4" prefWidth="1240.8" stylesheets="@../style/patientCss.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PatientRegisterController">
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.project.mentalHealthTherapyCenter.controller.PatientController">
     <children>
-        <Label layoutX="541.0" layoutY="27.0" text="Patient Registration">
+        <!-- Header -->
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="70.0" prefWidth="1239.0" style="-fx-background-color: #376E6F;">
+            <children>
+                <Label layoutX="227.0" layoutY="17.0" text="Serenity Mental Health Therapy Center - Patient Management" textFill="WHITE">
+                    <font>
+                        <Font name="Georgia Bold" size="24.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="850.0" layoutY="15.0">
+                    <image>
+                        <Image url="@../../../../../../../Pictures/Mental%20Hospital/icons8-patient-50.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+
+        <!-- Table View -->
+        <TableView fx:id="table" layoutX="20.0" layoutY="90.0" onMouseClicked="#tableAction" prefHeight="298.0" prefWidth="1206.0">
+            <columns>
+                <TableColumn fx:id="tablePId" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="tablePName" prefWidth="212.00006866455078" text="Name" />
+                <TableColumn fx:id="tablePDob" prefWidth="135.9998779296875" text="Date of Birth" />
+                <TableColumn fx:id="tablePNic" prefWidth="167.19992065429688" text="NIC no" />
+                <TableColumn fx:id="tablePGender" prefWidth="134.39990234375" text="Gender" />
+                <TableColumn fx:id="tablePAddress" prefWidth="176.0" text="Address" />
+                <TableColumn fx:id="tablePContact" prefWidth="140.0" text="Contact no" />
+                <TableColumn fx:id="tablePEmail" prefWidth="158.400146484375" text="E-mail" />
+            </columns>
+            <effect>
+                <DropShadow color="#00000033" height="10.0" radius="4.5" width="10.0" />
+            </effect>
+        </TableView>
+
+        <!-- Input Form Background -->
+        <AnchorPane layoutX="21.0" layoutY="410.0" prefHeight="180.0" prefWidth="1196.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+            <effect>
+                <DropShadow color="#00000026" height="8.0" radius="3.5" width="8.0" />
+            </effect>
+            <children>
+                <Label layoutX="60.0" layoutY="15.0" style="-fx-text-fill: #4C8C8C;" text="Patient Information">
+                    <font>
+                        <Font name="Georgia Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="58.0" layoutY="46.0" prefHeight="2.0" prefWidth="1150.0" />
+
+                <!-- First Row -->
+                <Label layoutX="70.0" layoutY="60.0" text="Patient ID:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+
+                <Label layoutX="330.0" layoutY="60.0" text="Full Name:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PName" layoutX="410.0" layoutY="57.0" prefWidth="240.0" promptText="Enter Patient Name" style="-fx-background-radius: 4;" />
+
+                <Label layoutX="680.0" layoutY="60.0" text="Date of Birth:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PDateOfBirth" layoutX="780.0" layoutY="57.0" prefWidth="150.0" promptText="YYYY-MM-DD" style="-fx-background-radius: 4;" />
+
+                <Label layoutX="960.0" layoutY="60.0" text="Gender:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="PatientGender" layoutX="1030.0" layoutY="57.0" prefWidth="120.0" promptText="Select Gender" style="-fx-background-radius: 4;" />
+
+                <!-- Second Row -->
+                <Label layoutX="70.0" layoutY="110.0" text="NIC Number:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PatientNic" layoutX="170.0" layoutY="107.0" prefWidth="180.0" promptText="Enter NIC" style="-fx-background-radius: 4;" />
+
+                <Label layoutX="370.0" layoutY="110.0" text="Address:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PatientAddress" layoutX="440.0" layoutY="107.0" prefWidth="240.0" promptText="Enter Address" style="-fx-background-radius: 4;" />
+
+                <Label layoutX="700.0" layoutY="110.0" text="Contact:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PatientContactNO" layoutX="770.0" layoutY="107.0" prefWidth="150.0" promptText="Phone Number" style="-fx-background-radius: 4;" />
+
+                <Label layoutX="940.0" layoutY="110.0" text="Email:" textFill="#333333">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="PatientEmail" layoutX="990.0" layoutY="107.0" prefWidth="180.0" promptText="Email Address" style="-fx-background-radius: 4;" />
+            <Label fx:id="loadPatientID" layoutX="174.0" layoutY="60.0" prefHeight="22.0" prefWidth="113.0" text="P001">
+               <font>
+                  <Font name="Georgia Bold" size="16.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+
+        <!-- Buttons -->
+        <Button fx:id="save" layoutX="185.0" layoutY="603.0" onAction="#saveAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 6;" text="REGISTER PATIENT" textFill="WHITE">
             <font>
-                <Font name="Arial Rounded MT Bold" size="28.0" />
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000040" height="5.0" radius="2.0" width="5.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+
+        <Button fx:id="update" layoutX="415.0" layoutY="603.0" onAction="#updateAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #346A6A; -fx-background-radius: 6;" text="UPDATE PATIENT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000040" height="5.0" radius="2.0" width="5.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+
+        <Button fx:id="delete" layoutX="645.0" layoutY="603.0" onAction="#deleteAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #A93226; -fx-background-radius: 6;" text="DELETE PATIENT" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000040" height="5.0" radius="2.0" width="5.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+
+        <Button fx:id="viewMedicalHistoryBTN" layoutX="875.0" layoutY="603.0" onAction="#viewMedicalHistoryBTNAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 6;" text="VIEW HISTORY" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <effect>
+                <DropShadow color="#00000040" height="5.0" radius="2.0" width="5.0" />
+            </effect>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+
+        <!-- Footer -->
+        <Label layoutX="443.0" layoutY="663.0" text="© Serenity Mental Health Therapy Center - Patient Management System" textFill="#4C8C8C">
+            <font>
+                <Font name="Georgia" size="12.0" />
             </font>
         </Label>
-
-        <Label layoutX="133.0" layoutY="102.0" prefHeight="18.0" prefWidth="70.0" text="Patient Id :" />
-
-        <Label layoutX="133.0" layoutY="142.0" prefHeight="18.0" prefWidth="94.0" text="Patient Name :" />
-        <TextField fx:id="txtName" layoutX="267.0" layoutY="135.0" prefHeight="29.0" prefWidth="553.0" promptText="kamal" />
-
-        <Label layoutX="133.0" layoutY="182.0" text="Patient Age :" />
-        <TextField fx:id="txtAge" layoutX="268.0" layoutY="175.0" prefHeight="29.0" prefWidth="554.0" promptText="52" />
-
-        <Label layoutX="133.0" layoutY="262.0" text="Mobile Number :" />
-
-        <Label layoutX="133.0" layoutY="339.0" text="Medical History :" />
-
-        <Button fx:id="btnRegister" layoutX="537.0" layoutY="432.0" onAction="#btnRegisterOnAction" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #142171; -fx-text-fill: white;" text="Register">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font></Button>
-
-        <TableView fx:id="tblPatients" layoutX="117.0" layoutY="474.0" prefHeight="166.0" prefWidth="1030.0">
-            <columns>
-                <TableColumn fx:id="colPatientId" prefWidth="100.0" text="Patient ID" />
-                <TableColumn fx:id="colFullName" prefWidth="150.0" text="Name" />
-                <TableColumn fx:id="colAge" prefWidth="128.00006103515625" text="Patient Age" />
-                <TableColumn fx:id="colGender" prefWidth="122.39999389648438" text="Patient Gender " />
-            <TableColumn fx:id="colNumber" prefWidth="134.666748046875" text="Mobile Number " />
-            <TableColumn fx:id="colAddress" prefWidth="146.93328857421875" text="Address " />
-            <TableColumn fx:id="colHistory" prefWidth="247.199951171875" text="Medical History " />
-            </columns>
-        </TableView>
-      <Label fx:id="lblId" layoutX="268.0" layoutY="94.0" prefHeight="26.0" prefWidth="103.0" text="P001" />
-      <TextField fx:id="txtPhone" layoutX="268.0" layoutY="256.0" prefHeight="30.0" prefWidth="554.0" promptText="0700000000" />
-      <Button fx:id="updateBtn" layoutX="641.0" layoutY="432.0" mnemonicParsing="false" onAction="#updateOnClick" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-font-weight: bold;" text="Update" />
-      <Button fx:id="deleteBtn" layoutX="750.0" layoutY="431.0" mnemonicParsing="false" onAction="#deleteOnClick" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" text="Delete" />
-      <TextArea layoutX="267.0" layoutY="338.0" prefHeight="84.0" prefWidth="555.0" />
-      <Label layoutX="133.0" layoutY="301.0" text="Address :" />
-      <TextField fx:id="txtAddress" layoutX="268.0" layoutY="297.0" prefHeight="30.0" prefWidth="553.0" promptText="kalutara" />
-      <Label layoutX="133.0" layoutY="219.0" prefHeight="24.0" prefWidth="96.0" text="Patient Gender :" />
-      <TextField fx:id="txtGender" layoutX="268.0" layoutY="215.0" prefHeight="30.0" prefWidth="554.0" promptText="Male" />
     </children>
 </AnchorPane>
