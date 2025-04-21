@@ -30,8 +30,8 @@ import java.util.ResourceBundle;
 public class TherapyProgramsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image adminIMage = new Image(getClass().getResourceAsStream("/images/TherapyPrograms.png"));
-        image.setImage(adminIMage);
+//        Image adminIMage = new Image(getClass().getResourceAsStream("/images/TherapyPrograms.png"));
+//        image.setImage(adminIMage);
 
         tableIID.setCellValueFactory(new PropertyValueFactory<>("therapyID"));
         tableName.setCellValueFactory(new PropertyValueFactory<>("therapyName"));

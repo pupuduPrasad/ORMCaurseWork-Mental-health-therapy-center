@@ -24,8 +24,8 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image1 = new Image(getClass().getResourceAsStream("/images/HospitalIconMain.png"));
-        image.setImage(image1);
+//        Image image1 = new Image(getClass().getResourceAsStream("/images/HospitalIconMain.png"));
+//        image.setImage(image1);
 
         try {
            refreshPage();

@@ -28,8 +28,8 @@ import java.util.ResourceBundle;
 public class MyProfile implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image1 = new Image(getClass().getResourceAsStream("/images/SettingInMyProfile.png"));
-        image.setImage(image1);
+//        Image image1 = new Image(getClass().getResourceAsStream("/images/SettingInMyProfile.png"));
+//        image.setImage(image1);
         try {
             refreshPage();
         }catch (Exception e){

@@ -19,14 +19,11 @@ import java.util.ResourceBundle;
 public class Login implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image adminIMage = new Image(getClass().getResourceAsStream("/images/LoginAdminPic.png"));
+        Image adminIMage = new Image(getClass().getResourceAsStream("/img/admin.jpeg"));
         admin.setImage(adminIMage);
-        Image userImage = new Image(getClass().getResourceAsStream("/images/LoginUserPic.png"));
+        Image userImage = new Image(getClass().getResourceAsStream("/img/users.png"));
         user.setImage(userImage);
 
-        Image image = new Image(getClass().getResourceAsStream("/images/bgPIc.jpg"));
-        imageBG.setImage(image);
-        imageBG.setId("bgImage");/*Adding an id to Remove css */
     }
 
     @FXML
@@ -38,8 +35,6 @@ public class Login implements Initializable {
     @FXML
     private Label text;
 
-    @FXML
-    private ImageView imageBG;
 
     @FXML
     void adminAction(MouseEvent event) throws IOException {

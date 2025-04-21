@@ -53,8 +53,8 @@ import java.util.*;
 public class AppointmentsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image1 = new Image(getClass().getResourceAsStream("/images/appointmentIcon.png"));
-        image.setImage(image1);
+//        Image image1 = new Image(getClass().getResourceAsStream("/images/appointmentIcon.png"));
+//        image.setImage(image1);
         updateDateTime();
         try{
             refreshPage();

@@ -30,8 +30,8 @@ import java.util.ResourceBundle;
 public class MedicalHistoryController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image image = new Image(getClass().getResourceAsStream("/images/appointmentIcon.png"));
-        Image.setImage(image);
+//        Image image = new Image(getClass().getResourceAsStream("/images/appointmentIcon.png"));
+//        Image.setImage(image);
 
         tablePid.setCellValueFactory(new PropertyValueFactory<>("patientID"));
         tablePName.setCellValueFactory(new PropertyValueFactory<>("patientName"));

@@ -31,8 +31,8 @@ import java.util.ResourceBundle;
 public class UserRegister implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image adminIMage = new Image(getClass().getResourceAsStream("/images/addUser.png"));
-        image.setImage(adminIMage);
+//        Image adminIMage = new Image(getClass().getResourceAsStream("/images/addUser.png"));
+//        image.setImage(adminIMage);
         refreshPage();
     }
     @FXML
