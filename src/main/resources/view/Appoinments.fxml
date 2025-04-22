@@ -61,14 +61,6 @@
                         <Font name="System" size="14.0" />
                     </font>
                 </TextField>
-                <Button fx:id="registerPatient" layoutX="720.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#registerPatientAction" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="Register New" textFill="WHITE">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
-                    </font>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                </Button>
 
                 <!-- Patient Info Display -->
                 <Label layoutX="15.0" layoutY="100.0" style="-fx-text-fill: #333333;" text="Patient ID:">
@@ -268,7 +260,7 @@
         </AnchorPane>
 
         <!-- Payment Details Section -->
-        <AnchorPane layoutX="20.0" layoutY="515.0" prefHeight="160.0" prefWidth="800.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+        <AnchorPane layoutX="20.0" layoutY="515.0" prefHeight="145.0" prefWidth="800.0" style="-fx-background-color: white; -fx-background-radius: 8;">
             <effect>
                 <DropShadow color="#00000026" height="8.0" radius="3.5" width="8.0" />
             </effect>
@@ -324,7 +316,7 @@
                 </Label>
                 <Separator layoutX="15.0" layoutY="40.0" prefWidth="140.0" />
 
-                <Button fx:id="addAppointmentBTN" layoutX="15.0" layoutY="60.0" mnemonicParsing="false" onAction="#addAppointmentBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="ADD APPOINTMENT" textFill="WHITE">
+                <Button fx:id="addAppointmentBTN" layoutX="15.0" layoutY="70.0" mnemonicParsing="false" onAction="#addAppointmentBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="ADD APPOINTMENT" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
@@ -336,7 +328,7 @@
                     </cursor>
                 </Button>
 
-                <Button fx:id="viewAppointmentsBTN" layoutX="15.0" layoutY="120.0" mnemonicParsing="false" onAction="#viewAppointmentsBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="VIEW APPOINTMENTS" textFill="WHITE">
+                <Button fx:id="viewAppointmentsBTN" layoutX="15.0" layoutY="151.0" mnemonicParsing="false" onAction="#viewAppointmentsBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 5;" text="VIEW APPOINTMENTS" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="11.0" />
                     </font>
@@ -348,7 +340,7 @@
                     </cursor>
                 </Button>
 
-                <Button fx:id="PatientsBTN" layoutX="15.0" layoutY="180.0" mnemonicParsing="false" onAction="#PatientsBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="PATIENT RECORDS" textFill="WHITE">
+                <Button fx:id="PatientsBTN" layoutX="15.0" layoutY="211.0" mnemonicParsing="false" onAction="#PatientsBTNAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 5;" text="PATIENT RECORDS" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
@@ -360,7 +352,7 @@
                     </cursor>
                 </Button>
 
-                <Button fx:id="reset" layoutX="15.0" layoutY="300.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: gray; -fx-background-radius: 5;" text="RESET FORM" textFill="WHITE">
+                <Button fx:id="reset" layoutX="15.0" layoutY="331.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: gray; -fx-background-radius: 5;" text="RESET FORM" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
@@ -372,7 +364,7 @@
                     </cursor>
                 </Button>
 
-                <Button fx:id="printBillBTN" layoutX="14.0" layoutY="238.0" mnemonicParsing="false" onAction="#printBillBTNAction" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #346A6A; -fx-background-radius: 5;" text="Print Bill" textFill="WHITE">
+                <Button fx:id="printBillBTN" layoutX="14.0" layoutY="269.0" mnemonicParsing="false" onAction="#printBillBTNAction" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 5;" text="Print Bill" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
@@ -403,6 +395,11 @@
       <Label fx:id="date" layoutX="922.0" layoutY="541.0" prefHeight="36.0" prefWidth="114.0" text="dd/mm/yy">
          <font>
             <Font name="Bodoni MT Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="671.0" text="© Serenity Mental Health Therapy Center - Patient Management System" textFill="#4C8C8C">
+         <font>
+            <Font name="Georgia" size="12.0" />
          </font>
       </Label>
     </children>

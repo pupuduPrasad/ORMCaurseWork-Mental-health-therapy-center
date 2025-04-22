@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PayementController">
    <children>
-      <TableView fx:id="table" layoutX="25.0" layoutY="140.0" onMouseClicked="#tableAction" prefHeight="518.0" prefWidth="1193.0">
+      <TableView fx:id="table" layoutX="25.0" layoutY="140.0" onMouseClicked="#tableAction" prefHeight="497.0" prefWidth="1194.0">
         <columns>
           <TableColumn fx:id="tablePayID" prefWidth="135.20000457763672" text="ID" />
           <TableColumn fx:id="tablePayerName" prefWidth="204.8000030517578" text="Payer" />
@@ -35,5 +35,10 @@
             </ImageView>
          </children>
       </Pane>
+      <Label layoutX="420.0" layoutY="667.0" text="© Serenity Mental Health Therapy Center - Patient Management System" textFill="#4C8C8C">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

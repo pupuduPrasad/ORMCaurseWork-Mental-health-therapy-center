@@ -123,7 +123,7 @@
             <ComboBox fx:id="docAvailableCombo" layoutX="670.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="Select availability" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;" />
 
             <!-- Buttons -->
-            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #3498db; -fx-background-radius: 4;" text="Save" textFill="WHITE">
+            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 4;" text="Save" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -139,7 +139,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 4;" text="Update" textFill="WHITE">
+            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 4;" text="Update" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -155,7 +155,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 4;" text="Delete" textFill="WHITE">
+            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #A93226; -fx-background-radius: 4;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -187,7 +187,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #9b59b6; -fx-background-radius: 4;" text="View Activities" textFill="WHITE">
+            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 4;" text="View Activities" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -221,5 +221,10 @@
             </Label>
          </children>
       </Pane>
+      <Label layoutX="453.0" layoutY="668.0" text="© Serenity Mental Health Therapy Center - Patient Management System" textFill="#4C8C8C">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

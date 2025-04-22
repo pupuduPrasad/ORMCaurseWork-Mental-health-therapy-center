@@ -167,5 +167,10 @@
                 </PasswordField>
             </children>
         </AnchorPane>
+      <Label layoutX="404.0" layoutY="669.0" text="© Serenity Mental Health Therapy Center - Patient Management System" textFill="#4C8C8C">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

@@ -42,8 +42,6 @@ import java.util.*;
 public class AppointmentsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        Image image1 = new Image(getClass().getResourceAsStream("/images/appointmentIcon.png"));
-//        image.setImage(image1);
         updateDateTime();
         try{
             refreshPage();
@@ -79,8 +77,6 @@ public class AppointmentsController implements Initializable {
     @FXML
     private Label paymentID;
 
-    @FXML
-    private Button registerPatient;
 
     @FXML
     private Button reset;
@@ -217,7 +213,9 @@ public class AppointmentsController implements Initializable {
     }
 
     @FXML
-    void viewAppointmentsBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/ViewAppointments.fxml");}
+    void viewAppointmentsBTNAction(ActionEvent event) throws IOException {
+        loadNewPage("/view/ViewAppointments.fxml");
+    }
 
     @FXML
     void addAppointmentBTNAction(ActionEvent event) {
@@ -232,7 +230,7 @@ public class AppointmentsController implements Initializable {
 
         String[] parts = doctorIDFromLabel.split(" - ");
         if (parts.length > 0) {
-            docID = parts[0];  // First part is docID , get id from the full label
+            docID = parts[0];
         }
 
         String paymentId = paymentID.getText();
@@ -257,13 +255,13 @@ public class AppointmentsController implements Initializable {
 
             ProgramDetailsDTO programDetailsDTO = new ProgramDetailsDTO(
                 patientId,
-                new ArrayList<>(programIDs)  /*List required as one patient can choose more than one programs*/
+                new ArrayList<>(programIDs)
 
             );
             SessionDTO sessionDTO = new SessionDTO(
                     sessionId,
                     patientId,
-                    docID, /*don't need a list here,took from label splitting the first part*/
+                    docID,
                     sessionTIME,
                     sessionNOTES,
                     sessionDATE
@@ -284,16 +282,8 @@ public class AppointmentsController implements Initializable {
             }else {
                 new Alert(Alert.AlertType.ERROR, "Failed! Appointment not added", ButtonType.OK).show();
             }
-      /*  }*/
     }
 
-
-    @FXML
-    void registerPatientAction(MouseEvent event) throws IOException {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION, "Do you want to Register a Patient", ButtonType.OK, ButtonType.CANCEL);
-        ButtonType result = alert.showAndWait().orElse(ButtonType.CANCEL);  // Default to CANCEL if no selection is made
-        if (result == ButtonType.OK) {navigateTo("/view/PatientRegeterPage.fxml");}
-    }
 
     @FXML
     void searchPatientAction(MouseEvent event) {
@@ -363,7 +353,6 @@ public class AppointmentsController implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Doctor Details - Serenity Mental Health Therapy Center");
-//        scene.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
         stage.show();
     }
     private void updateDateTime() {
