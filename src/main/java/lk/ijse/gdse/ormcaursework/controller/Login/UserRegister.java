@@ -146,26 +146,32 @@ public class UserRegister implements Initializable {
             boolean isSaved = userBO.saveUser(userDTO);
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, " SignUp SuccessFull", ButtonType.OK).show();
-                if (role.equals("USER")) {
-                    loadPage("/view/UserLogin.fxml");
-                    SessionHolder.currentRole = role;
-                }else{
-                    loadPage("/view/AdminLogin.fxml");
-                    SessionHolder.currentRole = role;
-                }
+                refreshPage();
             }else {
                 new Alert(Alert.AlertType.ERROR, "SignUp Failed", ButtonType.OK).show();
             }
         }
     }
+
     private void refreshPage() {
         userId.setText(userBO.getNextID());
+
+        userFUllName.clear();
+        userEmail.clear();
+        userName.clear();
+        passwordPWField.clear();
+        passwordConfirmPWField.clear();
+        passwordTextField.clear();
+        passwordConfirmTextField.clear();
+
         passwordPWField.setVisible(true);
         passwordConfirmPWField.setVisible(true);
         passwordTextField.setVisible(false);
         passwordConfirmTextField.setVisible(false);
         userRole.setItems(FXCollections.observableArrayList("USER", "ADMIN"));
+
     }
+
     private void loadPage(String fxmlPath) throws IOException {
         Stage stage = (Stage) clickhere.getScene().getWindow(); // Get current stage
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource(fxmlPath)));
