@@ -83,6 +83,9 @@ public class PatientController implements Initializable {
     private Button update;
 
     @FXML
+    private Button reset;
+
+    @FXML
     private TextField PDateOfBirth;
 
     @FXML
@@ -113,6 +116,11 @@ public class PatientController implements Initializable {
     private Button viewMedicalHistoryBTN;
 
     PatientBO patientBO = BOFactory.getInstance().getBO(BOType.PATIENT);
+
+    @FXML
+    void resetAction(ActionEvent event) throws Exception {
+        refreshPage();
+    }
 
     @FXML
     void saveAction(ActionEvent event) throws Exception {

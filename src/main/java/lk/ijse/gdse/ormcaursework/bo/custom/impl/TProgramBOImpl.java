@@ -1,8 +1,6 @@
 package lk.ijse.gdse.ormcaursework.bo.custom.impl;
 
 
-
-
 import lk.ijse.gdse.ormcaursework.bo.custom.TProgramBO;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
 import lk.ijse.gdse.ormcaursework.dao.DAOFactory;
@@ -89,7 +87,7 @@ public class TProgramBOImpl implements TProgramBO {
         }
     }
 
-    @Override /*this method retrives data for the popup in appointments*/
+    @Override
     public List<ProgramDto> getALLTPrograms() throws Exception {
         List<TPrograms> programList = tProgramDAO.getAll();
         List<ProgramDto> programDtos = new ArrayList<>();
@@ -110,14 +108,14 @@ public class TProgramBOImpl implements TProgramBO {
         Optional<String> lastPkOptional = tProgramDAO.getLastPK();
         if (lastPkOptional.isPresent()) {
             String lastPk = lastPkOptional.get();
-            int nextId = Integer.parseInt(lastPk.replace("PR", "")) + 1;  // Extract number and increment
+            int nextId = Integer.parseInt(lastPk.replace("PR", "")) + 1;
             return String.format("PR%03d", nextId);
         } else {
-            return "PR001";  // Default if no records exist
+            return "PR001";
         }
     }
 
-    @Override /*loads program table*/
+    @Override
     public List<ProgramDto> getALL() throws Exception {
         List<TPrograms> tPrograms = tProgramDAO.getAll();
         List<ProgramDto> dtos = new ArrayList<>();

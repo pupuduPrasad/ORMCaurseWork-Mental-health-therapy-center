@@ -64,13 +64,13 @@
          </font>
       </Label>
 
-      <Label fx:id="labelSessionID" layoutX="102.0" layoutY="493.0" prefHeight="27.0" prefWidth="79.0" text="Session ID" textFill="#333333">
+      <Label fx:id="labelSessionID" layoutX="150.0" layoutY="494.0" prefHeight="27.0" prefWidth="79.0" text="Session ID" textFill="#333333">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
 
-      <Label fx:id="labelPaymentID" layoutX="236.0" layoutY="492.0" prefHeight="27.0" prefWidth="89.0" text="Payment ID" textFill="#333333">
+      <Label fx:id="labelPaymentID" layoutX="319.0" layoutY="492.0" prefHeight="27.0" prefWidth="89.0" text="Payment ID" textFill="#333333">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -137,12 +137,11 @@
       <ComboBox fx:id="ComboDocId" layoutX="517.0" layoutY="642.0" prefHeight="38.0" prefWidth="173.0" promptText="Update doctor ID" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
 
       <!-- Third Column of Fields -->
-      <Label layoutX="392.0" layoutY="492.0" prefHeight="27.0" prefWidth="104.0" text="Patient Name:" textFill="#333333">
+      <Label fx:id="labelPatientName" layoutX="490.0" layoutY="492.0" prefHeight="27.0" prefWidth="104.0" text="Patient Name" textFill="#333333">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="comboPatientName" layoutX="516.0" layoutY="486.0" prefHeight="38.0" prefWidth="173.0" promptText="Update patient name" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
 
       <Button fx:id="rescheduleBTN" layoutX="839.0" layoutY="490.0" mnemonicParsing="false" onAction="#rescheduleBTNAction" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #4C8C8C;" text="RESCHEDULE" textFill="WHITE">
          <font>

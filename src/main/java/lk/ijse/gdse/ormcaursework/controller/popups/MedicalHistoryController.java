@@ -84,8 +84,7 @@ public class MedicalHistoryController implements Initializable {
             MedicalHistoryTM medicalHistoryTM = new MedicalHistoryTM(
                     medicalHistoryDTO.getPatientID(),
                     medicalHistoryDTO.getPatientName(),
-                    medicalHistoryDTO.getProgramID(),
-                    medicalHistoryDTO.getProgramName(),
+                    medicalHistoryDTO.getPrograms(),
                     medicalHistoryDTO.getDoctorNAME(),
                     medicalHistoryDTO.getSessionID(),
                     medicalHistoryDTO.getSessionDATE(),
