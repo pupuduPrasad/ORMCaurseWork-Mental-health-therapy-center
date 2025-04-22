@@ -29,8 +29,7 @@ public class MedicalHistoryController implements Initializable {
 
         tablePid.setCellValueFactory(new PropertyValueFactory<>("patientID"));
         tablePName.setCellValueFactory(new PropertyValueFactory<>("patientName"));
-        tableProID.setCellValueFactory(new PropertyValueFactory<>("programID"));
-        tableProName.setCellValueFactory(new PropertyValueFactory<>("programName"));
+        tableProID.setCellValueFactory(new PropertyValueFactory<>("programs"));
         tableDocName.setCellValueFactory(new PropertyValueFactory<>("doctorNAME"));
         tableAptID.setCellValueFactory(new PropertyValueFactory<>("sessionID"));
         tableDate.setCellValueFactory(new PropertyValueFactory<>("sessionDATE"));

@@ -2,10 +2,11 @@ package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
 
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
-import lk.ijse.gdse.ormcaursework.dao.custom.QueryDAO;
 import lk.ijse.gdse.ormcaursework.dto.MedicalHistoryDTO;
 import lk.ijse.gdse.ormcaursework.dto.PatientsInEveryProgramDTO;
 import lk.ijse.gdse.ormcaursework.dto.ViewSessionDTO;
+import lk.ijse.gdse.ormcaursework.entity.Therapist;
+import lk.ijse.gdse.ormcaursework.dao.custom.QueryDAO;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
@@ -65,10 +66,12 @@ public class QueryDAOImpl implements QueryDAO {
                     sessionMap.put(sessionID, sessionDTO);
                 }
 
+                // Add programID to the session's list of programs
                 if (programID != null && !programID.isEmpty()) {
                     sessionDTO.getPrograms().add(programID);
                 }
             }
+            // Return the sessions as a list
             return new ArrayList<>(sessionMap.values());
         } catch (RuntimeException e) {
             throw new RuntimeException(e);
