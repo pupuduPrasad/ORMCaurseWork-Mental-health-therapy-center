@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="525.0" prefWidth="886.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.MedicalHistoryController">
+<AnchorPane prefHeight="525.0" prefWidth="886.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.MedicalHistoryController">
     <children>
         <Label layoutX="260.0" layoutY="26.0" prefHeight="70.0" prefWidth="453.0" text="Patient's Medical History" textFill="#2c6263">
             <font>

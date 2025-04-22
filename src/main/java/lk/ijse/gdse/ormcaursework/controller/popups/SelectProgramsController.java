@@ -5,9 +5,11 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.TProgramBO;
@@ -73,6 +75,8 @@ public class SelectProgramsController implements Initializable {
         if (appointmentsController != null) {
             appointmentsController.setDetails(ID, Name);
         }
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
     @FXML
     void tableAction(MouseEvent event) {

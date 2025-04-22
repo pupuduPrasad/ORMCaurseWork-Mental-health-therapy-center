@@ -100,8 +100,8 @@ public class MainController implements Initializable {
     private void refreshPage(){
         String s = SessionHolder.userName;
         dashBoardUserNAME.setText(s);
-        navigateTo("/view/Appoinments.fxml");
-        dashBoardFrom.setText("Appointment Details Form");
+        navigateTo("/view/PatientRegeterPage.fxml");
+        dashBoardFrom.setText("Patients Details Form");
     }
 
     private void configureUI() {
@@ -114,8 +114,8 @@ public class MainController implements Initializable {
 
     @FXML
     void signUpButtonAction(MouseEvent event) throws IOException {
-        loadPage("/view/UserRegister.fxml");
-        SessionHolder.currentRole = role;
+        navigateTo("/view/UserRegister.fxml");
+        dashBoardFrom.setText("User Register Form");
     }
 
     @FXML
@@ -153,30 +153,10 @@ public class MainController implements Initializable {
         navigateTo("/view/TherapyPrograms.fxml");
         dashBoardFrom.setText("Therapy Programs Form");
     }
-
-    @FXML
-    void userAction(MouseEvent event) {
-        try {
-            loadAnchor.getChildren().clear();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/myProfile.fxml"));
-            AnchorPane load = loader.load();
-            MyProfile myProfileController = loader.getController();
-            myProfileController.setUserName(userName);
-//            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
-            load.prefWidthProperty().bind(loadAnchor.widthProperty());
-            load.prefHeightProperty().bind(loadAnchor.heightProperty());
-            loadAnchor.getChildren().add(load);
-            dashBoardFrom.setText("Profile Settings");
-         } catch (IOException e) {
-            e.printStackTrace();
-            new Alert(Alert.AlertType.ERROR, "Fail to load page!").show();
-         }
-    }
     public void navigateTo(String fxmlPath) {
         try {
             loadAnchor.getChildren().clear();
             AnchorPane load = FXMLLoader.load(getClass().getResource(fxmlPath));
-//            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
             load.prefWidthProperty().bind(loadAnchor.widthProperty());
             load.prefHeightProperty().bind(loadAnchor.heightProperty());
             loadAnchor.getChildren().add(load);
@@ -190,7 +170,6 @@ public class MainController implements Initializable {
         currentStage.close();
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource(fxmlPath)));
         Stage stage = new Stage();
-//        scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("The Serenity Mental Health Therapy Center");

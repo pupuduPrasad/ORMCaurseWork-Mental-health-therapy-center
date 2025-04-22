@@ -11,17 +11,13 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapistController">
    <children>
-      <Label layoutX="133.0" layoutY="33.0" text="Therapist Management" textFill="#1c3334">
-         <font>
-            <Font name="Segoe UI Bold" size="45.0" />
-         </font>
-      </Label>
 
       <!-- Table Container -->
       <AnchorPane layoutX="25.0" layoutY="116.0" prefHeight="295.0" prefWidth="1191.0" style="-fx-background-color: white; -fx-background-radius: 8;">
@@ -211,10 +207,19 @@
 
       <!-- Footer -->
       <Line endX="1116.0" layoutX="108.0" layoutY="666.0" startX="-83.0" stroke="#3498db" strokeWidth="0.5" />
-      <ImageView fx:id="image" fitHeight="92.0" fitWidth="92.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../img/doctor.png" />
-         </image>
-      </ImageView>
+      <Pane prefHeight="70.0" prefWidth="1241.0" style="-fx-background-color: #376E6F;">
+         <children>
+            <ImageView fx:id="image" fitHeight="70.0" fitWidth="72.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/doctor.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="104.0" layoutY="27.0" text="Therapist Management" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

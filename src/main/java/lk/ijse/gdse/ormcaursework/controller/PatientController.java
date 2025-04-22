@@ -27,8 +27,7 @@ import java.util.ResourceBundle;
 public class PatientController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        Image image1 = new Image(getClass().getResourceAsStream("/images/patient.png"));
-//        image.setImage(image1);
+
 
         tablePId.setCellValueFactory(new PropertyValueFactory<>("patientID"));
         tablePName.setCellValueFactory(new PropertyValueFactory<>("patientName"));

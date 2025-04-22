@@ -16,20 +16,15 @@
 
 <AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapyProgramsController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4C8C8C" height="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1243.0" />
+      <Rectangle arcHeight="5.0" fill="#376e6f" height="70.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1243.0" />
       <!-- Header Area -->
-      <Label layoutX="84.0" layoutY="12.0" text="Therapy Program Management" textFill="WHITE">
+      <Label layoutX="104.0" layoutY="27.0" text="Therapy Program Management" textFill="WHITE">
          <font>
-            <Font name="Georgia Bold" size="31.0" />
+            <Font name="Georgia Bold" size="29.0" />
          </font>
          <effect>
             <Glow level="0.17" />
          </effect>
-      </Label>
-      <Label layoutX="86.0" layoutY="59.0" text="Serenity Mental Health Therapy Center" textFill="WHITE">
-         <font>
-            <Font name="Georgia" size="16.0" />
-         </font>
       </Label>
 
       <Line endX="1200.0" layoutX="30.0" layoutY="95.0" stroke="#1c333466" strokeWidth="1.5" />
@@ -98,13 +93,13 @@
       <!-- Action Buttons - Vertical Arrangement -->
       <Line endX="1.0" endY="390.0" layoutX="1002.0" layoutY="266.0" stroke="#4c8c8c66" strokeWidth="1.5" />
 
-      <Label layoutX="1030.0" layoutY="130.0" text="Actions" textFill="#4C8C8C">
+      <Label layoutX="1030.0" layoutY="165.0" text="Actions" textFill="#4C8C8C">
          <font>
             <Font name="Georgia Bold" size="18.0" />
          </font>
       </Label>
 
-      <Button fx:id="save" layoutX="1030.0" layoutY="180.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C;" text="SAVE" textFill="WHITE">
+      <Button fx:id="save" layoutX="1030.0" layoutY="204.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #1C3334; -fx-background-radius: 50;" text="SAVE" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -113,7 +108,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="update" layoutX="1030.0" layoutY="250.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C;" text="UPDATE" textFill="WHITE">
+      <Button fx:id="update" layoutX="1030.0" layoutY="274.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #1C3334; -fx-background-radius: 50;" text="UPDATE" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -122,7 +117,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="delete" layoutX="1030.0" layoutY="320.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C;" text="DELETE" textFill="WHITE">
+      <Button fx:id="delete" layoutX="1030.0" layoutY="344.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #1C3334; -fx-background-radius: 50;" text="DELETE" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -131,7 +126,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="reset" layoutX="1030.0" layoutY="390.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C;" text="RESET" textFill="WHITE">
+      <Button fx:id="reset" layoutX="1030.0" layoutY="414.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="45.0" prefWidth="180.0" style="-fx-background-color: #1C3334; -fx-background-radius: 50;" text="RESET" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -139,7 +134,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fx:id="image" fitHeight="64.0" fitWidth="60.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image" fitHeight="52.0" fitWidth="60.0" layoutX="30.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/stress-management.png" />
          </image>

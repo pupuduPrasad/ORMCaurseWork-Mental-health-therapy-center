@@ -9,22 +9,28 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="appointmentPage" prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.AppointmentsController">
+<AnchorPane fx:id="appointmentPage" prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.AppointmentsController">
     <children>
         <!-- Header -->
-        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="60.0" prefWidth="1241.0" style="-fx-background-color: #4C8C8C;">
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="60.0" prefWidth="1241.0" style="-fx-background-color: #376E6F;">
             <children>
-                <Label layoutX="20.0" layoutY="15.0" text="Appointment Management" textFill="WHITE">
+                <Label layoutX="100.0" layoutY="17.0" text="Appointment Management" textFill="WHITE">
                     <font>
-                        <Font name="Georgia Bold" size="24.0" />
+                        <Font name="Georgia Bold" size="29.0" />
                     </font>
                 </Label>
             <ImageView fx:id="image" fitHeight="39.0" fitWidth="52.0" layoutX="379.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="32.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/appointment.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
 

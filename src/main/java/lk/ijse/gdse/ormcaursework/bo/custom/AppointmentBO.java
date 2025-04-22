@@ -1,7 +1,5 @@
 package lk.ijse.gdse.ormcaursework.bo.custom;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.*;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.SuperBO;
 
 import lk.ijse.gdse.ormcaursework.bo.SuperBO;
 import lk.ijse.gdse.ormcaursework.dto.*;

@@ -1,8 +1,5 @@
 package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.Appointments;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.AppointmentDAO;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
 import lk.ijse.gdse.ormcaursework.dao.custom.AppointmentDAO;
 import lk.ijse.gdse.ormcaursework.entity.Appointments;

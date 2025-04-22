@@ -1,7 +1,5 @@
 package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.ProgramDetails;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.ProgramDetailsDAO;
 import lk.ijse.gdse.ormcaursework.dao.custom.ProgramDetailsDAO;
 import lk.ijse.gdse.ormcaursework.entity.ProgramDetails;
 import org.hibernate.Session;

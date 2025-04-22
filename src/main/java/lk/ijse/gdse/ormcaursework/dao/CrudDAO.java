@@ -1,6 +1,5 @@
 package lk.ijse.gdse.ormcaursework.dao;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.SuperEntity;
 import lk.ijse.gdse.ormcaursework.entity.SuperEntity;
 import org.hibernate.Session;
 

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #f5f5f7;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.PatientsEnrolledInEveryPrograms">
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.PatientsEnrolledInEveryPrograms">
     <children>
 
         <TableView fx:id="Table" layoutX="20.0" layoutY="120.0" prefHeight="365.0" prefWidth="710.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">

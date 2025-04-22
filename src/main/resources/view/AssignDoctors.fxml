@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.AssignDoctorsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.AssignDoctorsController">
     <children>
         <Label layoutX="225.0" layoutY="20.0" text="Assign Therapist" textFill="#1c3334">
             <font>

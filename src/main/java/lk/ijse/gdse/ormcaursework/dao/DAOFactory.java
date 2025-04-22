@@ -1,6 +1,5 @@
 package lk.ijse.gdse.ormcaursework.dao;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.impl.*;
 
 import lk.ijse.gdse.ormcaursework.dao.custom.impl.*;
 

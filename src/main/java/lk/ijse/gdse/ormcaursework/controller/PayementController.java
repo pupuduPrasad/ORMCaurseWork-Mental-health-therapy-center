@@ -24,8 +24,6 @@ import java.util.ResourceBundle;
 public class PayementController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        Image image1 = new Image(getClass().getResourceAsStream("/images/Paymentmoney.png"));
-//        image.setImage(image1);
 
         tablePayID.setCellValueFactory(new PropertyValueFactory<>("paymentID"));
         tablePayerName.setCellValueFactory(new PropertyValueFactory<>("patientName"));

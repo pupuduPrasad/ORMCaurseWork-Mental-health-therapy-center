@@ -6,10 +6,12 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.TherapistBO;
@@ -24,9 +26,6 @@ import java.util.ResourceBundle;
 public class AssignDoctorsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        Image adminIMage = new Image(getClass().getResourceAsStream("/images/doctor.png"));
-//        image.setImage(adminIMage);
-
         try{
             refreshPage();
         } catch (Exception e) {
@@ -132,5 +131,7 @@ public class AssignDoctorsController implements Initializable {
             String Availability = docAvailable.getText();
             appointmentsController.setAddDoctors(ID, Name,Availability);
         }
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.close();
     }
 }

@@ -1,8 +1,5 @@
 package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.Payment;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.PaymentDAO;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
 import lk.ijse.gdse.ormcaursework.dao.custom.PaymentDAO;
 import lk.ijse.gdse.ormcaursework.entity.Payment;

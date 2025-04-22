@@ -1,13 +1,6 @@
 package lk.ijse.gdse.ormcaursework.bo.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.ProgramDto;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.TherapyProgramDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.TPrograms;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.DAOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.DAOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.TProgramDAO;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.TProgramBO;
+
 
 
 import lk.ijse.gdse.ormcaursework.bo.custom.TProgramBO;

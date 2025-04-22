@@ -232,8 +232,7 @@ public class TherapistController  implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-//        Image image1 = new Image(getClass().getResourceAsStream("/images/doctor.png"));
-//        image.setImage(image1);
+
 
         tableId.setCellValueFactory(new PropertyValueFactory<>("doctorID"));
         tableName.setCellValueFactory(new PropertyValueFactory<>("doctorName"));

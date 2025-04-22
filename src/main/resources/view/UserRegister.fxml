@@ -11,115 +11,160 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #f0f0f0;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.Login.UserRegister">
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.Login.UserRegister">
     <children>
+        <!-- Background design elements -->
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8f0c8" height="600.0" layoutX="220.0" layoutY="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="800.0" />
+
+        <!-- Left side decorative panel -->
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#8ede8e" height="600.0" layoutX="220.0" layoutY="45.0" stroke="TRANSPARENT" strokeType="INSIDE" width="250.0" />
+
+        <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="285.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/addUser.png" />
+            </image>
+        </ImageView>
+
+        <Label layoutX="255.0" layoutY="230.0" text="Create Account" textFill="#2D3142">
+            <font>
+                <Font name="Georgia Bold" size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="270.0" layoutY="280.0" text="Join our community" textFill="#2D3142">
+            <font>
+                <Font name="System Italic" size="16.0" />
+            </font>
+        </Label>
 
         <!-- Content area -->
-        <AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;">
+        <AnchorPane layoutX="470.0" layoutY="45.0" prefHeight="600.0" prefWidth="550.0">
             <children>
-                <Label layoutX="192.0" layoutY="46.0" text="REGISTER ACCOUNT" textFill="#376e6f">
+                <Label layoutX="100.0" layoutY="40.0" text="REGISTER ACCOUNT" textFill="#2D3142">
                     <font>
-                        <Font name="Georgia Bold" size="28.0" />
-                    </font>
-                </Label>
-
-                <!-- Compact form fields - Labels on left, fields on right -->
-                <Label layoutX="65.0" layoutY="121.0" prefHeight="18.0" prefWidth="124.0" text="USER ID">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <Label fx:id="userId" layoutX="195.0" layoutY="120.0" prefWidth="150.0" style="-fx-background-color: #e0e0e0; -fx-padding: 2;">
-                    <font>
-                        <Font size="12.0" />
-                    </font>
-                </Label>
-
-                <Label layoutX="65.0" layoutY="160.0" prefHeight="18.0" prefWidth="124.0" text="FULL NAME">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="userFUllName" layoutX="195.0" layoutY="152.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
-               <font>
-                  <Font size="13.0" />
-               </font></TextField>
-
-                <Label layoutX="65.0" layoutY="196.0" prefHeight="18.0" prefWidth="124.0" text="E-MAIL">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="userEmail" layoutX="195.0" layoutY="188.0" prefHeight="25.0" prefWidth="350.0" promptText="prasad@gmail.com" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
-               <font>
-                  <Font size="13.0" />
-               </font></TextField>
-
-                <Label layoutX="65.0" layoutY="232.0" prefHeight="18.0" prefWidth="124.0" text="ROLE">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <ComboBox fx:id="userRole" layoutX="195.0" layoutY="224.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
-
-                <Label layoutX="65.0" layoutY="267.0" prefHeight="18.0" prefWidth="124.0" text="USERNAME">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="userName" layoutX="195.0" layoutY="259.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
-               <font>
-                  <Font size="13.0" />
-               </font></TextField>
-
-                <Label layoutX="65.0" layoutY="302.0" prefHeight="18.0" prefWidth="124.0" text="PASSWORD">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-
-                <Label layoutX="65.0" layoutY="339.0" prefWidth="124.0" text="CONFIRM PW">
-                    <font>
-                        <Font size="14.0" />
-                    </font>
-                </Label>
-
-                <CheckBox fx:id="showPasswordcheckBox" layoutX="195.0" layoutY="378.0" mnemonicParsing="false" onAction="#showPasswordcheckBox" text="SHOW PASSWORD" />
-
-                <Button fx:id="signup" layoutX="130.0" layoutY="410.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="35.0" prefWidth="350.0" style="-fx-background-color: #376E6F;" text="SIGN UP" textFill="WHITE">
-                    <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Georgia Bold" size="32.0" />
                     </font>
                     <effect>
-                        <DropShadow />
+                        <DropShadow color="#00000033" height="5.0" radius="2.0" width="5.0" />
+                    </effect>
+                </Label>
+
+                <!-- Form fields with larger font sizes -->
+                <Label layoutX="50.0" layoutY="120.0" prefHeight="24.0" prefWidth="124.0" text="USER ID" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="userId" layoutX="180.0" layoutY="120.0" prefHeight="24.0" prefWidth="300.0" style="-fx-background-color: #FFFFFF; -fx-padding: 5; -fx-background-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <Label layoutX="50.0" layoutY="165.0" prefHeight="24.0" prefWidth="124.0" text="FULL NAME" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userFUllName" layoutX="180.0" layoutY="165.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+
+                <Label layoutX="50.0" layoutY="210.0" prefHeight="24.0" prefWidth="124.0" text="E-MAIL" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userEmail" layoutX="180.0" layoutY="210.0" prefHeight="30.0" prefWidth="300.0" promptText="example@gmail.com" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+
+                <Label layoutX="50.0" layoutY="255.0" prefHeight="24.0" prefWidth="124.0" text="ROLE" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="userRole" layoutX="180.0" layoutY="255.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;" />
+
+                <Label layoutX="50.0" layoutY="300.0" prefHeight="24.0" prefWidth="124.0" text="USERNAME" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userName" layoutX="180.0" layoutY="300.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+
+                <Label layoutX="50.0" layoutY="345.0" prefHeight="24.0" prefWidth="124.0" text="PASSWORD" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+
+                <Label layoutX="50.0" layoutY="390.0" prefHeight="24.0" prefWidth="124.0" text="CONFIRM PW" textFill="#2D3142">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+
+                <CheckBox fx:id="showPasswordcheckBox" layoutX="180.0" layoutY="440.0" mnemonicParsing="false" onAction="#showPasswordcheckBox" text="SHOW PASSWORD" textFill="#2D3142">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </CheckBox>
+
+                <Button fx:id="signup" layoutX="100.0" layoutY="470.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="40.0" prefWidth="350.0" style="-fx-background-color: #1C3334; -fx-background-radius: 20;" text="SIGN UP" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <effect>
+                        <DropShadow color="#00000080" height="10.0" radius="4.5" width="10.0" />
                     </effect>
                 </Button>
 
-                <Label layoutX="162.0" layoutY="459.0" text="Already have an account?">
+                <Label layoutX="162.0" layoutY="530.0" text="Already have an account?" textFill="#2D3142">
                     <font>
-                        <Font size="12.0" />
+                        <Font size="14.0" />
                     </font>
                 </Label>
-                <Hyperlink fx:id="clickhere" layoutX="319.0" layoutY="456.0" onMouseClicked="#clickhereAction" text="Click here" />
-            <TextField fx:id="passwordTextField" layoutX="195.0" layoutY="298.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </TextField>
-            <TextField fx:id="passwordConfirmTextField" layoutX="195.0" layoutY="336.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </TextField>
-            <ImageView fx:id="image" fitHeight="52.0" fitWidth="47.0" layoutX="131.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/addUser.png" />
-               </image>
-            </ImageView>
-            <PasswordField fx:id="passwordPWField" layoutX="195.0" layoutY="300.0" prefHeight="26.0" prefWidth="350.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;" />
-            <PasswordField fx:id="passwordConfirmPWField" layoutX="195.0" layoutY="338.0" prefHeight="26.0" prefWidth="350.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;" />
+                <Hyperlink fx:id="clickhere" layoutX="315.0" layoutY="528.0" onMouseClicked="#clickhereAction" text="Click here" textFill="#1c3334">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Hyperlink>
+
+                <TextField fx:id="passwordTextField" layoutX="180.0" layoutY="345.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+
+                <TextField fx:id="passwordConfirmTextField" layoutX="180.0" layoutY="390.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+
+                <PasswordField fx:id="passwordPWField" layoutX="180.0" layoutY="345.0" prefHeight="30.0" prefWidth="300.0" promptText="Enter Password" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+
+                <PasswordField fx:id="passwordConfirmPWField" layoutX="180.0" layoutY="390.0" prefHeight="30.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: #AAC4FF; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
             </children>
         </AnchorPane>
     </children>

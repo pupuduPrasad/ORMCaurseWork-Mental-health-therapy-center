@@ -19,14 +19,15 @@ public class ProgramDetails implements SuperEntity {
 
 
     @ManyToOne
-  /*  @MapsId("patientID")*/
     @JoinColumn(name = "patientID")
     private  Patient patient;
 
     @ManyToOne
-   /* @MapsId("therapyProgramID")*/
     @JoinColumn(name = "therapyProgramID")
     private TPrograms tPrograms;
+
+    @Column(name = "sessionID")
+    private String sessionID;
 
 }
 

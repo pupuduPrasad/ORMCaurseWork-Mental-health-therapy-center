@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PayementController">
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PayementController">
    <children>
       <TableView fx:id="table" layoutX="25.0" layoutY="140.0" onMouseClicked="#tableAction" prefHeight="518.0" prefWidth="1193.0">
         <columns>
@@ -21,16 +21,16 @@
             <TableColumn fx:id="tablePayTime" prefWidth="222.40008544921875" text="Time" />
         </columns>
       </TableView>
-      <Pane layoutX="-5.0" layoutY="-1.0" prefHeight="104.0" prefWidth="1246.0" style="-fx-background-color: #1C3334;">
+      <Pane layoutX="-5.0" layoutY="-1.0" prefHeight="70.0" prefWidth="1246.0" style="-fx-background-color: #376E6F;">
          <children>
-            <Label layoutX="425.0" layoutY="11.0" prefHeight="67.0" prefWidth="508.0" text="Payments Details" textFill="WHITE">
+            <Label layoutX="107.0" layoutY="21.0" prefHeight="36.0" prefWidth="254.0" text="Payments Details" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="53.0" />
+                  <Font name="System Bold" size="29.0" />
                </font>
             </Label>
-            <ImageView fx:id="image" fitHeight="58.0" fitWidth="112.0" layoutX="315.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image" fitHeight="56.0" fitWidth="55.0" layoutX="39.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/pay.jpg" />
+                  <Image url="@../img/pay.png" />
                </image>
             </ImageView>
          </children>

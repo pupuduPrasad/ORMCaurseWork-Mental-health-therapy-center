@@ -1,9 +1,6 @@
 package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.User;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.UserDAO;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.exeception.NotFoundException;
+
 import lk.ijse.gdse.ormcaursework.bo.exeception.NotFoundException;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
 import lk.ijse.gdse.ormcaursework.dao.custom.UserDAO;

@@ -1,10 +1,6 @@
 package lk.ijse.gdse.ormcaursework.dao.custom.impl;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.entity.TPrograms;
-//import lk.ijse.project.mentalHealthTherapyCenter.repostory.custom.TProgramDAO;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.exeception.DuplicateException;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.exeception.NotFoundException;
+
 import lk.ijse.gdse.ormcaursework.bo.exeception.DuplicateException;
 import lk.ijse.gdse.ormcaursework.bo.exeception.NotFoundException;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;

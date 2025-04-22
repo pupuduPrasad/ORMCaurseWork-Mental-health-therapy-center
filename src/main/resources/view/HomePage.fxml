@@ -30,7 +30,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <VBox fx:id="adminVbox" prefHeight="156.0" prefWidth="279.0" spacing="35.0">
+            <VBox fx:id="adminVbox" prefHeight="246.0" prefWidth="222.0" spacing="35.0">
                <children>
                   <Button fx:id="therapist" mnemonicParsing="false" onMouseClicked="#doctorDetailsAction" prefHeight="55.0" prefWidth="193.0" text="Therapists" textFill="WHITE">
                      <font>
@@ -42,25 +42,23 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Button>
+                  <Button fx:id="signUpButton" mnemonicParsing="false" onMouseClicked="#signUpButtonAction" prefHeight="55.0" prefWidth="193.0" text="Add User" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
                </children>
                <padding>
                   <Insets bottom="5.0" top="5.0" />
                </padding>
             </VBox>
-            <Button fx:id="user" mnemonicParsing="false" onMouseClicked="#userAction" prefHeight="55.0" prefWidth="193.0" text="Profile" textFill="WHITE">
+            <Button fx:id="signOutButton" mnemonicParsing="false" onMouseClicked="#signOutButtonAction" prefHeight="41.0" prefWidth="118.0" style="-fx-background-color: darkred;" text="Sign Out" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
-            </Button>
-            <Button fx:id="signUpButton" mnemonicParsing="false" onMouseClicked="#signUpButtonAction" prefHeight="55.0" prefWidth="193.0" text="Add User" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="signOutButton" mnemonicParsing="false" onMouseClicked="#signOutButtonAction" prefHeight="55.0" prefWidth="193.0" text="Sign Out" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
+               <VBox.margin>
+                  <Insets left="35.0" top="70.0" />
+               </VBox.margin>
             </Button>
          </children>
          <padding>
@@ -91,6 +89,6 @@
             </Label>
          </children>
       </Pane>
-      <AnchorPane fx:id="loadAnchor" layoutX="401.0" layoutY="100.0" prefHeight="690.0" prefWidth="1241.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <AnchorPane fx:id="loadAnchor" layoutX="292.0" layoutY="102.2" prefHeight="686.0" prefWidth="1246.0" AnchorPane.bottomAnchor="-2.2000000000000455" AnchorPane.leftAnchor="292.0" AnchorPane.rightAnchor="1.599999999999909" AnchorPane.topAnchor="102.2" />
    </children>
 </AnchorPane>

@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="703.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #e6e9f0);" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.ViewAppointments">
+<AnchorPane prefHeight="703.0" prefWidth="1200.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.popups.ViewAppointments">
    <children>
       <Pane layoutX="-14.0" layoutY="-3.0" prefHeight="67.0" prefWidth="1215.0" style="-fx-background-color: #376E6F;">
          <children>
@@ -153,7 +153,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="cancelBTN" layoutX="840.0" layoutY="558.0" mnemonicParsing="false" onAction="#cancelBTNAction" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #4C8C8C;" text="CANCEL APPOINTMENT" textFill="WHITE">
+      <Button fx:id="cancelBTN" layoutX="840.0" layoutY="558.0" mnemonicParsing="false" onAction="#cancelBTNAction" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #A93226;" text="CANCEL APPOINTMENT" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -162,7 +162,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="resetBTN" layoutX="841.0" layoutY="625.0" mnemonicParsing="false" onAction="#resetBTNAction" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: #4C8C8C;" text="RESET" textFill="WHITE">
+      <Button fx:id="resetBTN" layoutX="841.0" layoutY="625.0" mnemonicParsing="false" onAction="#resetBTNAction" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: darkgray;" text="RESET" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

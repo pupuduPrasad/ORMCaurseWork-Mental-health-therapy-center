@@ -1,6 +1,5 @@
 package lk.ijse.gdse.ormcaursework.bo;
 
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.impl.*;
 
 import lk.ijse.gdse.ormcaursework.bo.custom.impl.*;
 

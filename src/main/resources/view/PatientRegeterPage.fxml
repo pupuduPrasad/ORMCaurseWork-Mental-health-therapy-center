@@ -9,19 +9,26 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #C5CBE3;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PatientController">
+<AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.PatientController">
     <children>
         <!-- Header -->
         <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="70.0" prefWidth="1239.0" style="-fx-background-color: #376E6F;">
             <children>
-                <Label layoutX="227.0" layoutY="17.0" text="Serenity Mental Health Therapy Center - Patient Management" textFill="WHITE">
+                <Label layoutX="111.0" layoutY="26.0" text="Serenity Mental Health Therapy Center - Patient Management" textFill="WHITE">
                     <font>
-                        <Font name="Georgia Bold" size="24.0" />
+                        <Font name="Georgia Bold" size="29.0" />
                     </font>
                 </Label>
+            <ImageView fitHeight="61.0" fitWidth="65.0" layoutX="24.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/patient.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
 
