@@ -70,7 +70,7 @@ public class UserRegister implements Initializable {
     UserBO userBO = BOFactory.getInstance().getBO(BOType.USER);
 
     @FXML
-    void clickhereAction(MouseEvent event) throws IOException {loadPage("/view/login.fxml");}
+    void clickhereAction(MouseEvent event) throws IOException {loadPage("/view/UserRole.fxml");}
 
     @FXML
     void showPasswordcheckBox(ActionEvent event) {
@@ -149,10 +149,10 @@ public class UserRegister implements Initializable {
             if (isSaved) {
                 new Alert(Alert.AlertType.INFORMATION, " SignUp SuccessFull", ButtonType.OK).show();
                 if (role.equals("USER")) {
-                    loadPage("/view/userLogin.fxml");
+                    loadPage("/view/UserLogin.fxml");
                     SessionHolder.currentRole = role;
                 }else{
-                    loadPage("/view/adminLogin.fxml");
+                    loadPage("/view/AdminLogin.fxml");
                     SessionHolder.currentRole = role;
                 }
             }else {

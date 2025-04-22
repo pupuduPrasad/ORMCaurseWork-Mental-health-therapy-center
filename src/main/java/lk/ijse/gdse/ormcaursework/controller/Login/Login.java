@@ -38,12 +38,12 @@ public class Login implements Initializable {
 
     @FXML
     void adminAction(MouseEvent event) throws IOException {
-        loadPage("/view/adminLogin.fxml","admin");
+        loadPage("/view/AdminLogin.fxml","admin");
     }
 
     @FXML
     void userAction(MouseEvent event) throws IOException {
-        loadPage("/view/userLogin.fxml","user");
+        loadPage("/view/UserLogin.fxml","user");
     }
 
     private void loadPage(String fxmlPath,String role) throws IOException {

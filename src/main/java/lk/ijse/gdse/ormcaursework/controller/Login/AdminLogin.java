@@ -52,7 +52,7 @@ public class AdminLogin implements Initializable {
 
     @FXML
     void forgetPassAction(MouseEvent event) throws IOException {
-        loadNewPage("/view/forgetPassword.fxml" , "admin");
+        loadNewPage("/view/ForgetPassword.fxml" , "admin");
         SessionHolder.currentRole = role;
     }
 
@@ -94,7 +94,7 @@ public class AdminLogin implements Initializable {
         String passFromDB = userBO.findPassWord(username,role1);
 
         if (userFromDB && PasswordUtil.matches(password,passFromDB)){
-            navigateToMainPage("/view/MainLayout.fxml", "admin", username);
+            navigateToMainPage("/view/HomePage.fxml", "admin", username);
         } else {
             new Alert(Alert.AlertType.ERROR, "Login Failed..", ButtonType.OK).show();
         }

@@ -19,9 +19,6 @@ import java.util.ResourceBundle;
 public class ForgetPassword implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Image passwordIcon = new Image(getClass().getResourceAsStream("/images/password.png"));
-        image.setImage(passwordIcon);
-
         passwordFieldOne.setVisible(true);
         passwordFieldTwo.setVisible(true);
 

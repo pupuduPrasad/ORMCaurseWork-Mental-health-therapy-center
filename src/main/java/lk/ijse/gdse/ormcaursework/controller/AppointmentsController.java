@@ -217,7 +217,7 @@ public class AppointmentsController implements Initializable {
     }
 
     @FXML
-    void viewAppointmentsBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/viewAppointments.fxml");}
+    void viewAppointmentsBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/ViewAppointments.fxml");}
 
     @FXML
     void addAppointmentBTNAction(ActionEvent event) {
@@ -292,7 +292,7 @@ public class AppointmentsController implements Initializable {
     void registerPatientAction(MouseEvent event) throws IOException {
         Alert alert = new Alert(Alert.AlertType.INFORMATION, "Do you want to Register a Patient", ButtonType.OK, ButtonType.CANCEL);
         ButtonType result = alert.showAndWait().orElse(ButtonType.CANCEL);  // Default to CANCEL if no selection is made
-        if (result == ButtonType.OK) {navigateTo("/view/patient.fxml");}
+        if (result == ButtonType.OK) {navigateTo("/view/PatientRegeterPage.fxml");}
     }
 
     @FXML
@@ -324,7 +324,7 @@ public class AppointmentsController implements Initializable {
     }
 
     @FXML
-    void addDoctorsAction(MouseEvent event) throws IOException {loadNewPage("/view/assignDocs.fxml");}
+    void addDoctorsAction(MouseEvent event) throws IOException {loadNewPage("/view/AssignDoctors.fxml");}
 
     @FXML
     void resetAction(ActionEvent event) {
@@ -346,12 +346,12 @@ public class AppointmentsController implements Initializable {
     }
 
     @FXML
-    void PatientsBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/PatientsEnrolledInEveryPrograms.fxml");}
+    void PatientsBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/PatientsEveryPrograms.fxml");}
 
     private void loadNewPage(String fxmlPath) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
         Parent root = loader.load();
-        if (fxmlPath.equals("/view/assignDocs.fxml")) {
+        if (fxmlPath.equals("/view/AssignDoctors.fxml")) {
             AssignDoctorsController assignDoctorsController = loader.getController();
             assignDoctorsController.setAppointmentsController(this);
         } else if (fxmlPath.equals("/view/SelectPrograms.fxml")) {
@@ -363,7 +363,7 @@ public class AppointmentsController implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Doctor Details - Serenity Mental Health Therapy Center");
-        scene.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
+//        scene.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
         stage.show();
     }
     private void updateDateTime() {

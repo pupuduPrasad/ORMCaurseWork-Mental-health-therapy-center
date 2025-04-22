@@ -77,7 +77,7 @@ public class UserLogin implements Initializable {
 
         if (userFromDB && PasswordUtil.matches(password, passFromDB)) {
             SessionHolder.userName = username;
-            navigateToMainPage("/view/MainLayout.fxml", "user", username);
+            navigateToMainPage("/view/HomePage.fxml", "user", username);
         } else {
             new Alert(Alert.AlertType.ERROR, "Login Failed..", ButtonType.OK).show();
         }
@@ -98,7 +98,7 @@ public class UserLogin implements Initializable {
 
     @FXML
     void forgetPassAction(MouseEvent event) throws IOException {
-        loadNewPage("/view/forgetPassword.fxml","user");
+        loadNewPage("/view/ForgetPassword.fxml","user");
         SessionHolder.currentRole = role;
     }
     private void refreshPage(){

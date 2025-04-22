@@ -224,7 +224,7 @@ public class PatientController implements Initializable {
     }
 
     @FXML
-    void viewMedicalHistoryBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/MedicalHistory.fxml");}
+    void viewMedicalHistoryBTNAction(ActionEvent event) throws IOException {loadNewPage("/view/PatientMedicalHistory.fxml");}
 
     private void loadNewPage(String fxmlPath) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
@@ -234,7 +234,7 @@ public class PatientController implements Initializable {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Doctor Details - Serenity Mental Health Therapy Center");
-        scene.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
+//        scene.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
         stage.show();
     }
     private void loadTableData() throws Exception {

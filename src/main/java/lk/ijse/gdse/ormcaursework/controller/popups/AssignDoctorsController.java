@@ -86,13 +86,10 @@ public class AssignDoctorsController implements Initializable {
             if (docComboBox.getItems() == null || !docComboBox.getItems().equals(doctorNames)) {
                 Platform.runLater(() -> docComboBox.setItems(doctorNames));
             }
-            // Add listener to ComboBox to update labels when a doctor is selected
             docComboBox.valueProperty().addListener((observable, oldValue, newValue) -> {
                 if (newValue != null) {
-                    // Find the corresponding DoctorDTO for the selected name
                     DoctorDTO selectedDoctor = findDoctorByName(doctors, newValue);
 
-                    // Update the labels with the doctor information
                     docIdFromCombo.setText(selectedDoctor.getDoctorID());
                     docNameFromCombo.setText(selectedDoctor.getDoctorName());
                     docQualificationsFromCombo.setText(selectedDoctor.getDoctorQualifications());

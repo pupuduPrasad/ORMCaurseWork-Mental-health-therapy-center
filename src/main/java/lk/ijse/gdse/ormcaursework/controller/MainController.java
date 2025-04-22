@@ -19,7 +19,6 @@ import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.net.URL;
-import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -99,7 +98,6 @@ public class MainController implements Initializable {
     }
 
     private void refreshPage(){
-//        updateDateTime();
         String s = SessionHolder.userName;
         dashBoardUserNAME.setText(s);
         navigateTo("/view/Appoinments.fxml");
@@ -164,7 +162,7 @@ public class MainController implements Initializable {
             AnchorPane load = loader.load();
             MyProfile myProfileController = loader.getController();
             myProfileController.setUserName(userName);
-            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
+//            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
             load.prefWidthProperty().bind(loadAnchor.widthProperty());
             load.prefHeightProperty().bind(loadAnchor.heightProperty());
             loadAnchor.getChildren().add(load);
@@ -178,7 +176,7 @@ public class MainController implements Initializable {
         try {
             loadAnchor.getChildren().clear();
             AnchorPane load = FXMLLoader.load(getClass().getResource(fxmlPath));
-            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
+//            load.getStylesheets().add(getClass().getResource("/css/h.css").toExternalForm());
             load.prefWidthProperty().bind(loadAnchor.widthProperty());
             load.prefHeightProperty().bind(loadAnchor.heightProperty());
             loadAnchor.getChildren().add(load);
@@ -192,7 +190,7 @@ public class MainController implements Initializable {
         currentStage.close();
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource(fxmlPath)));
         Stage stage = new Stage();
-        scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
+//        scene.getStylesheets().add(getClass().getResource("/css/login.css").toExternalForm());
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("The Serenity Mental Health Therapy Center");
