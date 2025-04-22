@@ -10,10 +10,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import lk.ijse.gdse.ormcaursework.controller.Login.UtilClasses.SessionHolder;
 import lombok.Setter;
+import javafx.scene.text.Text;
 
 import java.io.IOException;
 import java.net.URL;
@@ -38,8 +40,7 @@ public class MainController implements Initializable {
     @FXML
     private Label dashBoardUserNAME;
 
-    @FXML
-    private Label dashboardTime;
+
 
     @FXML
     private VBox adminVbox;
@@ -48,13 +49,13 @@ public class MainController implements Initializable {
     private Button appointments;
 
     @FXML
-    private Label dashBoardFrom;
+    private Text dashBoardFrom;
 
     @FXML
     private Label dateDashBoard;
 
     @FXML
-    private AnchorPane header;
+    private Pane header;
 
     @FXML
     private ImageView image;
@@ -91,8 +92,6 @@ public class MainController implements Initializable {
     @Setter
     private String userName;
 
-    private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-yyyy");
-    private final DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss  a");
 
     public void setUserRole(String role) {
         this.role = role;
@@ -103,7 +102,7 @@ public class MainController implements Initializable {
 //        updateDateTime();
         String s = SessionHolder.userName;
         dashBoardUserNAME.setText(s);
-        navigateTo("/view/appointments.fxml");
+        navigateTo("/view/Appoinments.fxml");
         dashBoardFrom.setText("Appointment Details Form");
     }
 
@@ -117,13 +116,13 @@ public class MainController implements Initializable {
 
     @FXML
     void signUpButtonAction(MouseEvent event) throws IOException {
-        loadPage("/view/userRegister.fxml");
+        loadPage("/view/UserRegister.fxml");
         SessionHolder.currentRole = role;
     }
 
     @FXML
     void appointmentsAction(MouseEvent event) {
-        navigateTo("/view/appointments.fxml");
+        navigateTo("/view/Appoinments.fxml");
         dashBoardFrom.setText("Appointment Details Form");
     }
 
@@ -135,7 +134,7 @@ public class MainController implements Initializable {
 
     @FXML
     void patientsAction(MouseEvent event) {
-        navigateTo("/view/patient.fxml");
+        navigateTo("/view/PatientRegeterPage.fxml");
         dashBoardFrom.setText("Patients Details Form");
 
     }
@@ -148,7 +147,7 @@ public class MainController implements Initializable {
 
     @FXML
     void signOutButtonAction(MouseEvent event) throws IOException {
-        loadPage("/view/login.fxml");
+        loadPage("/view/UserRole.fxml");
     }
 
     @FXML
@@ -199,16 +198,5 @@ public class MainController implements Initializable {
         stage.setTitle("The Serenity Mental Health Therapy Center");
         stage.show();
     }
-//    private void updateDateTime() {
-//        Timeline timeline = new Timeline(
-//                new KeyFrame(Duration.seconds(1), event -> {
-//                    String currentDate = LocalDate.now().format(formatter);
-//                    dateDashBoard.setText(currentDate);
-//                    String currentTime = LocalTime.now().format(timeFormatter);
-//                    dashboardTime.setText(currentTime);
-//                })
-//        );
-//        timeline.setCycleCount(Timeline.INDEFINITE);
-//        timeline.play();
-//    }
+
 }

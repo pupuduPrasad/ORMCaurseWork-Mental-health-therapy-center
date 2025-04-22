@@ -17,7 +17,7 @@
     <children>
 
         <!-- Content area -->
-        <AnchorPane fx:id="image" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;">
+        <AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;">
             <children>
                 <Label layoutX="192.0" layoutY="46.0" text="REGISTER ACCOUNT" textFill="#376e6f">
                     <font>
@@ -113,7 +113,7 @@
                   <Font size="13.0" />
                </font>
             </TextField>
-            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="131.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="image" fitHeight="52.0" fitWidth="47.0" layoutX="131.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/addUser.png" />
                </image>

@@ -16,7 +16,7 @@
 
 <AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapyProgramsController">
    <children>
-      <Rectangle fx:id="image" arcHeight="5.0" arcWidth="5.0" fill="#4C8C8C" height="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1243.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4C8C8C" height="80.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1243.0" />
       <!-- Header Area -->
       <Label layoutX="84.0" layoutY="12.0" text="Therapy Program Management" textFill="WHITE">
          <font>
@@ -139,7 +139,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <ImageView fitHeight="64.0" fitWidth="60.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image" fitHeight="64.0" fitWidth="60.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../img/stress-management.png" />
          </image>
