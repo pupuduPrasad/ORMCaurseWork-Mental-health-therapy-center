@@ -14,11 +14,6 @@ import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.PatientBO;
 import lk.ijse.gdse.ormcaursework.dto.PatientsInEveryProgramDTO;
 import lk.ijse.gdse.ormcaursework.dto.TM.PatientsInEveryProgramTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.PatientsInEveryProgramDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.TM.PatientsInEveryProgramTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.PatientBO;
 
 import java.net.URL;
 import java.util.List;

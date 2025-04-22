@@ -101,6 +101,16 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
+            <TextField fx:id="txtPassWord1" layoutX="42.0" layoutY="126.0" prefHeight="30.0" prefWidth="470.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPassWord2" layoutX="42.0" layoutY="171.0" prefHeight="30.0" prefWidth="470.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;">
+               <font>
+                  <Font name="Consolas" size="14.0" />
+               </font>
+            </TextField>
          </children>
       </AnchorPane>
    </children>

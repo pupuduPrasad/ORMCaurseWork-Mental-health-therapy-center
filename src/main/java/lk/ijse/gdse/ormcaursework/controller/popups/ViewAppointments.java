@@ -17,14 +17,6 @@ import lk.ijse.gdse.ormcaursework.dto.ProgramDetailsDTO;
 import lk.ijse.gdse.ormcaursework.dto.SessionDTO;
 import lk.ijse.gdse.ormcaursework.dto.TM.ViewSessionTM;
 import lk.ijse.gdse.ormcaursework.dto.ViewSessionDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.PaymentDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.ProgramDetailsDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.SessionDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.TM.ViewSessionTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.ViewSessionDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.AppointmentBO;
 
 import java.net.URL;
 import java.sql.Date;

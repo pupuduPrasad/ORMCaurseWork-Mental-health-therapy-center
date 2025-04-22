@@ -6,12 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.UserBO;

@@ -5,8 +5,11 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -14,9 +17,9 @@
     <children>
 
         <!-- Content area -->
-        <AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;">
+        <AnchorPane fx:id="image" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #C5CBE3;">
             <children>
-                <Label layoutX="155.0" layoutY="46.0" text="REGISTER ACCOUNT" textFill="#376e6f">
+                <Label layoutX="192.0" layoutY="46.0" text="REGISTER ACCOUNT" textFill="#376e6f">
                     <font>
                         <Font name="Georgia Bold" size="28.0" />
                     </font>
@@ -76,14 +79,12 @@
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <TextField fx:id="passwordTextField" layoutX="195.0" layoutY="218.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" visible="false" />
 
                 <Label layoutX="65.0" layoutY="339.0" prefWidth="124.0" text="CONFIRM PW">
                     <font>
                         <Font size="14.0" />
                     </font>
                 </Label>
-                <TextField fx:id="passwordConfirmTextField" layoutX="195.0" layoutY="248.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" visible="false" />
 
                 <CheckBox fx:id="showPasswordcheckBox" layoutX="195.0" layoutY="378.0" mnemonicParsing="false" onAction="#showPasswordcheckBox" text="SHOW PASSWORD" />
 
@@ -102,16 +103,23 @@
                     </font>
                 </Label>
                 <Hyperlink fx:id="clickhere" layoutX="319.0" layoutY="456.0" onMouseClicked="#clickhereAction" text="Click here" />
-            <TextField fx:id="userName1" layoutX="195.0" layoutY="298.0" prefHeight="25.0" prefWidth="350.0" promptText="Enter Password" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+            <TextField fx:id="passwordTextField" layoutX="195.0" layoutY="298.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
                <font>
                   <Font size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="userName11" layoutX="195.0" layoutY="336.0" prefHeight="25.0" prefWidth="350.0" promptText="Conform Password" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
+            <TextField fx:id="passwordConfirmTextField" layoutX="195.0" layoutY="336.0" prefHeight="25.0" prefWidth="350.0" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;">
                <font>
                   <Font size="13.0" />
                </font>
             </TextField>
+            <ImageView fitHeight="52.0" fitWidth="47.0" layoutX="131.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/addUser.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passwordPWField" layoutX="195.0" layoutY="300.0" prefHeight="26.0" prefWidth="350.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;" />
+            <PasswordField fx:id="passwordConfirmPWField" layoutX="195.0" layoutY="338.0" prefHeight="26.0" prefWidth="350.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;" />
             </children>
         </AnchorPane>
     </children>

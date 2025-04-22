@@ -8,18 +8,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-
-//import lk.ijse.project.mentalHealthTherapyCenter.config.FactoryConfiguration;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.DoctorDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.TM.TherapistTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.TherapistBO;
-
-
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.TherapistBO;

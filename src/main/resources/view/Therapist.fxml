@@ -8,6 +8,8 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.shape.Line?>
@@ -15,7 +17,7 @@
 
 <AnchorPane prefHeight="690.0" prefWidth="1241.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.TherapistController">
    <children>
-      <Label layoutX="44.0" layoutY="31.0" text="Therapist Management" textFill="#1c3334">
+      <Label layoutX="133.0" layoutY="33.0" text="Therapist Management" textFill="#1c3334">
          <font>
             <Font name="Segoe UI Bold" size="45.0" />
          </font>
@@ -209,5 +211,10 @@
 
       <!-- Footer -->
       <Line endX="1116.0" layoutX="108.0" layoutY="666.0" startX="-83.0" stroke="#3498db" strokeWidth="0.5" />
+      <ImageView fx:id="image" fitHeight="92.0" fitWidth="92.0" layoutX="25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/doctor.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

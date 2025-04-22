@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.Login.AdminLogin">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #E0FFD1;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.ormcaursework.controller.Login.AdminLogin">
 
     <!-- Title -->
     <Label layoutX="256.0" layoutY="83.0" prefHeight="32.0" prefWidth="201.0" text="ADMIN LOGIN" textFill="#1c3334">
@@ -24,7 +24,7 @@
         <font><Font name="System Bold" size="21.0" /></font>
     </Label>
     <TextField fx:id="adminUserName" layoutX="139.0" layoutY="193.0" prefWidth="320.0" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 2px 0;" />
-    <PasswordField fx:id="adminPasswordTextField" layoutX="139.0" layoutY="263.0" prefWidth="320.0" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 2px 0;" />
+    <PasswordField fx:id="adminPasswordPwField" layoutX="139.0" layoutY="263.0" prefWidth="320.0" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 2px 0;" />
 
     <!-- Show password checkbox -->
     <CheckBox fx:id="adminCheckBox" layoutX="138.0" layoutY="320.0" mnemonicParsing="false" onAction="#adminCheckBoxAction" text="Show Password">
@@ -47,10 +47,11 @@
             <Font name="System Bold" size="21.0" />
         </font>
     </Label>
-    <ImageView fitHeight="84.0" fitWidth="80.0" layoutX="150.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+    <ImageView fx:id="image" fitHeight="84.0" fitWidth="80.0" layoutX="150.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
         <image>
             <Image url="@../img/admin.jpeg" />
         </image>
     </ImageView>
+   <TextField fx:id="adminPasswordTextField" layoutX="139.0" layoutY="264.0" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1px 0;" />
 
 </AnchorPane>

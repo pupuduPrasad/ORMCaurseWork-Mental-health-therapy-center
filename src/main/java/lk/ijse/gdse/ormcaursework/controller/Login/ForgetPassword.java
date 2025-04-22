@@ -6,8 +6,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.UserBO;
@@ -23,8 +21,6 @@ public class ForgetPassword implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Image passwordIcon = new Image(getClass().getResourceAsStream("/images/password.png"));
         image.setImage(passwordIcon);
-        Image backImage = new Image(getClass().getResourceAsStream("/images/back-arrow.png"));
-        back.setImage(backImage);
 
         passwordFieldOne.setVisible(true);
         passwordFieldTwo.setVisible(true);
@@ -35,8 +31,6 @@ public class ForgetPassword implements Initializable {
     @FXML
     private TextField Email;
 
-    @FXML
-    private ImageView back;
 
     @FXML
     private Button change;
@@ -143,8 +137,5 @@ public class ForgetPassword implements Initializable {
             passwordFieldTwo.setText(confirmPassword.getText());
         }
     }
-    @FXML
-    void backIdAction(MouseEvent event) {
 
-    }
 }

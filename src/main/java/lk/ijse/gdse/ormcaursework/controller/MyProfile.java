@@ -4,7 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
@@ -13,13 +12,6 @@ import lk.ijse.gdse.ormcaursework.bo.custom.UserBO;
 import lk.ijse.gdse.ormcaursework.controller.Login.UtilClasses.PasswordUtil;
 import lk.ijse.gdse.ormcaursework.controller.Login.UtilClasses.SessionHolder;
 import lk.ijse.gdse.ormcaursework.dto.UserDTO;
-
-//import lk.ijse.project.mentalHealthTherapyCenter.controller.Login.UtilClasses.PasswordUtil;
-//import lk.ijse.project.mentalHealthTherapyCenter.controller.Login.UtilClasses.SessionHolder;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.UserDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.UserBO;
 
 import java.net.URL;
 import java.util.List;
@@ -49,8 +41,8 @@ public class MyProfile implements Initializable {
     @FXML
     private Label role;
 
-    @FXML
-    private Button setPic;
+//    @FXML
+//    private Button setPic;
 
     @FXML
     private Label topicUserNameLabel;
@@ -86,9 +78,9 @@ public class MyProfile implements Initializable {
 
     @FXML
     private Button updatePassword;
-
-    @FXML
-    private Button updateProfile;
+//
+//    @FXML
+//    private Button updateProfile;
 
     @FXML
     private Label userName;
@@ -96,8 +88,8 @@ public class MyProfile implements Initializable {
     @FXML
     private Label IDLabel;
 
-    @FXML
-    private Button clear1;
+//    @FXML
+//    private Button clear1;
 
     @FXML
     private Button clear2;
@@ -121,26 +113,26 @@ public class MyProfile implements Initializable {
         }
     }
 
-    @FXML
-    void updateDetailsAction(ActionEvent event) {
-        String UserName = txtUserFUllName.getText();
-        String email = txtUserMail.getText();
-
-        String id = IDLabel.getText();
-
-        UserDTO userDTO = new UserDTO();
-            userDTO.setUserID(id);
-            userDTO.setUserFullName(UserName);
-            userDTO.setUserEmail(email);
-
-            boolean isUpdated = userBO.update(userDTO);
-           if (isUpdated) {
-               refreshPage();
-               new Alert(Alert.AlertType.INFORMATION, "User updated", ButtonType.OK).show();
-           }else {
-               new Alert(Alert.AlertType.ERROR, "User not updated", ButtonType.OK).show();
-           }
-    }
+//    @FXML
+//    void updateDetailsAction(ActionEvent event) {
+//        String UserName = txtUserFUllName.getText();
+//        String email = txtUserMail.getText();
+//
+//        String id = IDLabel.getText();
+//
+//        UserDTO userDTO = new UserDTO();
+//            userDTO.setUserID(id);
+//            userDTO.setUserFullName(UserName);
+//            userDTO.setUserEmail(email);
+//
+//            boolean isUpdated = userBO.update(userDTO);
+//           if (isUpdated) {
+//               refreshPage();
+//               new Alert(Alert.AlertType.INFORMATION, "User updated", ButtonType.OK).show();
+//           }else {
+//               new Alert(Alert.AlertType.ERROR, "User not updated", ButtonType.OK).show();
+//           }
+//    }
 
     @FXML
     void updatePassWordAction(ActionEvent event) {
@@ -213,11 +205,11 @@ public class MyProfile implements Initializable {
         passwordConfirmPWField1.clear();
         passwordConfirmPWField2.clear();
     }
-    @FXML
-    void clearAction1(ActionEvent event) {
-        txtUserFUllName.clear();
-        txtUserMail.clear();
-    }
+//    @FXML
+//    void clearAction1(ActionEvent event) {
+//        txtUserFUllName.clear();
+//        txtUserMail.clear();
+//    }
 
     @FXML
     void clearAction2(ActionEvent event) {

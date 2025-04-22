@@ -9,18 +9,12 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import lk.ijse.gdse.ormcaursework.bo.BOFactory;
 import lk.ijse.gdse.ormcaursework.bo.BOType;
 import lk.ijse.gdse.ormcaursework.bo.custom.PatientBO;
 import lk.ijse.gdse.ormcaursework.dto.MedicalHistoryDTO;
 import lk.ijse.gdse.ormcaursework.dto.TM.MedicalHistoryTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.MedicalHistoryDTO;
-//import lk.ijse.project.mentalHealthTherapyCenter.dto.TM.MedicalHistoryTM;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOFactory;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.BOType;
-//import lk.ijse.project.mentalHealthTherapyCenter.service.custom.PatientBO;
 
 import java.net.URL;
 import java.sql.SQLException;
