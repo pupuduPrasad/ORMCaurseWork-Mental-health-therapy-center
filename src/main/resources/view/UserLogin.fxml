@@ -52,6 +52,6 @@
          <Image url="@../img/users.png" />
       </image>
    </ImageView>
-   <TextField fx:id="passwordTextField" layoutX="139.0" layoutY="256.0" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: trasparent;" />
+   <TextField fx:id="passwordTextField" layoutX="139.0" layoutY="254.0" prefHeight="26.0" prefWidth="320.0" style="-fx-background-color: trasparent; -fx-border-width: 0 0 2px 0; -fx-border-color: #4C8C8C;" />
 
 </AnchorPane>

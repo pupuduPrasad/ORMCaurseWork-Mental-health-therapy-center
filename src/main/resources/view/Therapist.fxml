@@ -46,14 +46,14 @@
       </AnchorPane>
 
       <!-- Details Section Label -->
-      <Label layoutX="25.0" layoutY="419.0" text="Therapist Details" textFill="#2c3e50">
+      <Label layoutX="25.0" layoutY="427.0" text="Therapist Details" textFill="#2c3e50">
          <font>
             <Font name="Segoe UI Bold" size="16.0" />
          </font>
       </Label>
 
       <!-- Form Container -->
-      <AnchorPane layoutX="25.0" layoutY="454.0" prefHeight="200.0" prefWidth="1191.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+      <AnchorPane layoutX="25.0" layoutY="454.0" prefHeight="200.0" prefWidth="1191.0" style="-fx-background-color: #8ede8e; -fx-background-radius: 8;">
          <effect>
             <DropShadow height="8.0" radius="3.5" width="8.0">
                <color>
@@ -123,7 +123,7 @@
             <ComboBox fx:id="docAvailableCombo" layoutX="670.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="Select availability" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;" />
 
             <!-- Buttons -->
-            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 4;" text="Save" textFill="WHITE">
+            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 50;" text="Save" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -139,7 +139,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 4;" text="Update" textFill="WHITE">
+            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 50;" text="Update" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -155,7 +155,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #A93226; -fx-background-radius: 4;" text="Delete" textFill="WHITE">
+            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #A93226; -fx-background-radius: 50;" text="Delete" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -171,7 +171,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="reset" layoutX="650.0" layoutY="150.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 4;" text="Reset" textFill="WHITE">
+            <Button fx:id="reset" layoutX="650.0" layoutY="150.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 50;" text="Reset" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -187,7 +187,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 4;" text="View Activities" textFill="WHITE">
+            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 50;" text="View Activities" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -206,7 +206,7 @@
       </AnchorPane>
 
       <!-- Footer -->
-      <Line endX="1116.0" layoutX="108.0" layoutY="666.0" startX="-83.0" stroke="#3498db" strokeWidth="0.5" />
+      <Line endX="1116.0" layoutX="108.0" layoutY="662.0" startX="-83.0" stroke="#3498db" strokeWidth="0.5" />
       <Pane prefHeight="70.0" prefWidth="1241.0" style="-fx-background-color: #376E6F;">
          <children>
             <ImageView fx:id="image" fitHeight="70.0" fitWidth="72.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">

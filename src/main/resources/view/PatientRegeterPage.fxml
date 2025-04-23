@@ -50,7 +50,7 @@
         </TableView>
 
         <!-- Input Form Background -->
-        <AnchorPane layoutX="21.0" layoutY="410.0" prefHeight="180.0" prefWidth="1196.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+        <AnchorPane layoutX="21.0" layoutY="410.0" prefHeight="180.0" prefWidth="1196.0" style="-fx-background-color: #8ede8e; -fx-background-radius: 8;">
             <effect>
                 <DropShadow color="#00000026" height="8.0" radius="3.5" width="8.0" />
             </effect>
@@ -127,7 +127,7 @@
         </AnchorPane>
 
         <!-- Buttons -->
-        <Button fx:id="save" layoutX="77.0" layoutY="603.0" onAction="#saveAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 6;" text="REGISTER PATIENT" textFill="WHITE">
+        <Button fx:id="save" layoutX="77.0" layoutY="603.0" onAction="#saveAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 50;" text="REGISTER PATIENT" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
@@ -139,7 +139,7 @@
             </cursor>
         </Button>
 
-        <Button fx:id="update" layoutX="307.0" layoutY="603.0" onAction="#updateAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #346A6A; -fx-background-radius: 6;" text="UPDATE PATIENT" textFill="WHITE">
+        <Button fx:id="update" layoutX="307.0" layoutY="603.0" onAction="#updateAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #346A6A; -fx-background-radius: 50;" text="UPDATE PATIENT" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
@@ -151,7 +151,7 @@
             </cursor>
         </Button>
 
-        <Button fx:id="delete" layoutX="537.0" layoutY="603.0" onAction="#deleteAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #A93226; -fx-background-radius: 6;" text="DELETE PATIENT" textFill="WHITE">
+        <Button fx:id="delete" layoutX="537.0" layoutY="603.0" onAction="#deleteAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #A93226; -fx-background-radius: 50;" text="DELETE PATIENT" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
@@ -163,7 +163,7 @@
             </cursor>
         </Button>
 
-        <Button fx:id="viewMedicalHistoryBTN" layoutX="767.0" layoutY="603.0" onAction="#viewMedicalHistoryBTNAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 6;" text="VIEW HISTORY" textFill="WHITE">
+        <Button fx:id="viewMedicalHistoryBTN" layoutX="767.0" layoutY="603.0" onAction="#viewMedicalHistoryBTNAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 50;" text="VIEW HISTORY" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="14.0" />
             </font>
@@ -181,7 +181,7 @@
                 <Font name="Georgia" size="12.0" />
             </font>
         </Label>
-      <Button fx:id="reset" layoutX="1001.0" layoutY="602.0" onAction="#resetAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: gray; -fx-background-radius: 6;" text="RESET" textFill="WHITE">
+      <Button fx:id="reset" layoutX="1001.0" layoutY="602.0" onAction="#resetAction" prefHeight="40.0" prefWidth="180.0" style="-fx-background-color: gray; -fx-background-radius: 50;" text="RESET" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

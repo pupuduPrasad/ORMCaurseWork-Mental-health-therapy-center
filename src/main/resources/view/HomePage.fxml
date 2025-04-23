@@ -77,12 +77,12 @@
                   <Font name="Arial Black" size="41.0" />
                </font>
             </Text>
-            <Label fx:id="dashBoardUserNAME" layoutX="1205.0" layoutY="58.0" prefHeight="30.0" prefWidth="98.0" text="WELCOME" textFill="WHITE">
+            <Label fx:id="dashBoardUserNAME" layoutX="1283.0" layoutY="63.0" prefHeight="30.0" prefWidth="98.0" text="WELCOME" textFill="#70d91c">
                <font>
                   <Font name="Impact" size="23.0" />
                </font>
             </Label>
-            <Label layoutX="1345.0" layoutY="58.0" prefHeight="30.0" prefWidth="172.0" text="IS ACTIVE NOW" textFill="WHITE">
+            <Label layoutX="1401.0" layoutY="63.0" prefHeight="30.0" prefWidth="126.0" text="ACTIVE NOW" textFill="WHITE">
                <font>
                   <Font name="Impact" size="23.0" />
                </font>
