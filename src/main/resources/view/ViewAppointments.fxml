@@ -127,17 +127,17 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="comboPaymentMethod" layoutX="517.0" layoutY="593.0" prefHeight="38.0" prefWidth="173.0" promptText="Update payment method" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
+      <ComboBox fx:id="comboPaymentMethod" layoutX="517.0" layoutY="590.0" prefHeight="38.0" prefWidth="173.0" promptText="Update payment method" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
 
       <Label layoutX="395.0" layoutY="651.0" text="Doctor ID:" textFill="#333333">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ComboBox fx:id="ComboDocId" layoutX="517.0" layoutY="642.0" prefHeight="38.0" prefWidth="173.0" promptText="Update doctor ID" style="-fx-background-color: white; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
+      <ComboBox fx:id="ComboDocId" layoutX="517.0" layoutY="642.0" prefHeight="38.0" prefWidth="173.0" promptText="Update doctor ID" style="-fx-background-color: transparent; -fx-border-color: #4C8C8C; -fx-border-width: 0 0 1 0;" />
 
       <!-- Third Column of Fields -->
-      <Label fx:id="labelPatientName" layoutX="490.0" layoutY="492.0" prefHeight="27.0" prefWidth="104.0" text="Patient Name" textFill="#333333">
+      <Label fx:id="labelPatientName" layoutX="490.0" layoutY="492.0" prefHeight="27.0" prefWidth="230.0" text="Patient Name" textFill="#333333">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -161,7 +161,7 @@
          </cursor>
       </Button>
 
-      <Button fx:id="resetBTN" layoutX="841.0" layoutY="625.0" mnemonicParsing="false" onAction="#resetBTNAction" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: darkgray;" text="RESET" textFill="WHITE">
+      <Button fx:id="resetBTN" layoutX="841.0" layoutY="625.0" mnemonicParsing="false" onAction="#resetBTNAction" prefHeight="36.0" prefWidth="231.0" style="-fx-background-color: darkgray; -fx-border-radius: 20px;" text="RESET" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
