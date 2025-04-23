@@ -12,22 +12,29 @@ Hibernate (optional) – ORM for cleaner DB access
 
 🌟 Features
 👤 Patient Management
+
 Easily add, update, and search patient records.
 
 📅 Appointment Scheduling
+
 Plan therapy sessions and avoid overlaps or double bookings.
 
 👩‍⚕️ Therapist Profiles
+
 Manage therapist details, specializations, and availability.
 
 📝 Therapy Session Notes
+
 Record confidential session details and progress notes.
 
 📊 Reports & Analytics
+
 Track patient growth, session trends, and therapist workloads.
 
 🔐 Login System
+
 Ensures only authorized users can access sensitive information.
+
 
 
 🚀 Getting Started
