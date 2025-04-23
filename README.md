@@ -34,6 +34,9 @@ Ensures only authorized users can access sensitive information.
 ✅ Prerequisites
 
 Java 17 or higher
+
 MySQL Server
+
 SceneBuilder (for UI editing)
+
 IDE like IntelliJ IDEA or Eclipse
