@@ -5,12 +5,18 @@ The Mental Health Therapy Care Center system is designed to help therapy clinics
 
 🔧 Tech Stack
 Java – Core language 
+
 JavaFX – UI framework 
+
 MySQL – Database engine 
+
 SceneBuilder – UI design tool 
+
 Hibernate (optional) – ORM for cleaner DB access
 
+
 🌟 Features
+
 👤 Patient Management
 
 Easily add, update, and search patient records.
