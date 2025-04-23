@@ -1,7 +1,9 @@
 💚 Mental Health Therapy Care Center
 
 📌 Project Summary
+
 The Mental Health Therapy Care Center system is designed to help therapy clinics manage their daily tasks with simplicity, empathy, and security. Whether you're running a private practice or a larger facility, this system is built to support your workflow — so you can focus on what matters most: mental health care.
+
 
 🔧 Tech Stack
 Java – Core language 
