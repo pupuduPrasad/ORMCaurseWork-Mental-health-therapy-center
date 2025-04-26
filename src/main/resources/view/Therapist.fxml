@@ -123,7 +123,7 @@
             <ComboBox fx:id="docAvailableCombo" layoutX="670.0" layoutY="105.0" prefHeight="32.0" prefWidth="290.0" promptText="Select availability" style="-fx-background-color: #F5F7FA; -fx-background-radius: 4;" />
 
             <!-- Buttons -->
-            <Button fx:id="save" layoutX="170.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 50;" text="Save" textFill="WHITE">
+            <Button fx:id="save" alignment="CENTER" contentDisplay="CENTER" layoutX="534.0" layoutY="150.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #4C8C8C; -fx-background-radius: 50;" text="Save" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -139,7 +139,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="update" layoutX="330.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 50;" text="Update" textFill="WHITE">
+            <Button fx:id="update" alignment="CENTER" contentDisplay="CENTER" layoutX="694.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #346A6A; -fx-background-radius: 50;" text="Update" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -155,7 +155,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="delete" layoutX="490.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #A93226; -fx-background-radius: 50;" text="Delete" textFill="WHITE">
+            <Button fx:id="delete" alignment="CENTER" contentDisplay="CENTER" layoutX="854.0" layoutY="150.0" mnemonicParsing="false" onAction="#deleteBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #A93226; -fx-background-radius: 50;" text="Delete" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>
@@ -171,23 +171,7 @@
                </effect>
             </Button>
 
-            <Button fx:id="reset" layoutX="650.0" layoutY="150.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 50;" text="Reset" textFill="WHITE">
-               <font>
-                  <Font name="Segoe UI Bold" size="13.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <DropShadow height="4.0" radius="1.5" width="4.0">
-                     <color>
-                        <Color opacity="0.25" />
-                     </color>
-                  </DropShadow>
-               </effect>
-            </Button>
-
-            <Button fx:id="viewActivities" layoutX="810.0" layoutY="150.0" mnemonicParsing="false" onAction="#viewActivitiesBtnAction" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #2E86C1; -fx-background-radius: 50;" text="View Activities" textFill="WHITE">
+            <Button fx:id="reset" alignment="CENTER" contentDisplay="CENTER" layoutX="1014.0" layoutY="150.0" mnemonicParsing="false" onAction="#resetBtnAction" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: #95a5a6; -fx-background-radius: 50;" text="Reset" textAlignment="RIGHT" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="13.0" />
                </font>

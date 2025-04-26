@@ -77,12 +77,7 @@
                   <Font name="Arial Black" size="41.0" />
                </font>
             </Text>
-            <Label fx:id="dashBoardUserNAME" layoutX="1283.0" layoutY="63.0" prefHeight="30.0" prefWidth="98.0" text="WELCOME" textFill="#70d91c">
-               <font>
-                  <Font name="Impact" size="23.0" />
-               </font>
-            </Label>
-            <Label layoutX="1401.0" layoutY="63.0" prefHeight="30.0" prefWidth="126.0" text="ACTIVE NOW" textFill="WHITE">
+            <Label fx:id="dashBoardUserNAME" layoutX="1430.0" layoutY="63.0" prefHeight="30.0" prefWidth="98.0" text="WELCOME" textFill="#70d91c">
                <font>
                   <Font name="Impact" size="23.0" />
                </font>

@@ -16,12 +16,9 @@ import lk.ijse.gdse.ormcaursework.bo.custom.TherapistBO;
 import lk.ijse.gdse.ormcaursework.config.FactoryConfiguration;
 import lk.ijse.gdse.ormcaursework.dto.DoctorDTO;
 import lk.ijse.gdse.ormcaursework.dto.TM.TherapistTM;
-import net.sf.jasperreports.engine.*;
-import net.sf.jasperreports.view.JasperViewer;
 import org.hibernate.Session;
 
 import java.net.URL;
-import java.sql.Connection;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -85,32 +82,9 @@ public class TherapistController  implements Initializable {
     @FXML
     private Button update;
 
-    @FXML
-    private Button viewActivities;
 
     TherapistBO therapistBO = BOFactory.getInstance().getBO(BOType.THERAPIST);
 
-    @FXML
-    void viewActivitiesBtnAction(ActionEvent event) {
-        Session session = FactoryConfiguration.getInstance().getSession();
-        try {
-            session = FactoryConfiguration.getInstance().getSession();
-            Connection connection = session.doReturningWork(con -> con);
-
-            JasperReport jasperReport = JasperCompileManager.compileReport(
-                    getClass().getResourceAsStream("/JasperReports/TherapistStatistics.jrxml"));
-
-            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, null, connection);
-            JasperViewer.viewReport(jasperPrint, false);
-
-        } catch (JRException e) {
-            e.printStackTrace();
-        } finally {
-            if (session != null && session.isOpen()) {
-                session.close();
-            }
-        }
-    }
 
     @FXML
     void TableAction(MouseEvent event) {
