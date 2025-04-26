@@ -226,7 +226,7 @@ public class AppointmentsController implements Initializable {
         String sessionNOTES = sessionNotes.getText();
         String sessionDATE = sessionDate.getEditor().getText();
         String doctorIDFromLabel = docLoadLabel.getText();
-        String docID = null; /*this id is pass through sessionDTO*/
+        String docID = null;
 
         String[] parts = doctorIDFromLabel.split(" - ");
         if (parts.length > 0) {

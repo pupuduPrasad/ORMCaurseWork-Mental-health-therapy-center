@@ -131,10 +131,10 @@ public class TherapistController  implements Initializable {
         String patientID = docIDlabel.getText();
         boolean isDeleted = therapistBO.deleteTherapist(patientID);
         if (isDeleted) {
-            new Alert(Alert.AlertType.INFORMATION, "Deleted Successfully").show();
+            new Alert(Alert.AlertType.INFORMATION, "Therapist Deleted Successfully").show();
             refreshPage();
         }else {
-            new Alert(Alert.AlertType.ERROR, "Deletion Failed").show();
+            new Alert(Alert.AlertType.ERROR, "Therapist Deletion Failed").show();
         }
     }
 
@@ -182,7 +182,7 @@ public class TherapistController  implements Initializable {
                 refreshPage();
                 new Alert(Alert.AlertType.INFORMATION,"Therapist Saved",ButtonType.OK).show();
             }else{
-                new Alert(Alert.AlertType.ERROR,"Saving Failed",ButtonType.OK).show();
+                new Alert(Alert.AlertType.ERROR,"Therapist Saving Failed",ButtonType.OK).show();
             }
     }
 
@@ -223,9 +223,9 @@ public class TherapistController  implements Initializable {
         boolean isSaved = therapistBO.updateTherapist(doctorDTO);
         if (isSaved) {
             refreshPage();
-            new Alert(Alert.AlertType.INFORMATION,"Therapist Saved",ButtonType.OK).show();
+            new Alert(Alert.AlertType.INFORMATION,"Therapist Updated",ButtonType.OK).show();
         }else{
-            new Alert(Alert.AlertType.ERROR,"Saving Failed",ButtonType.OK).show();
+            new Alert(Alert.AlertType.ERROR,"Therapist Updating Failed",ButtonType.OK).show();
         }
     }
 
